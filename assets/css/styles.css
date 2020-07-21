@@ -1,0 +1,235 @@
+#collapsicon-div {
+  text-align: right;
+}
+
+#customers-report {
+  text-align: right;
+}
+
+#customers-report-button {
+  border-radius: 50px 0px 0px 50px;
+  color: rgb(255,214,0);
+  font-size: 16px;
+  font-weight: 600;
+  right: 5px;
+}
+
+#coworkers-report-button {
+  border-radius: 0px 50px 50px 0px;
+  color: rgb(255,214,0);
+  font-size: 16px;
+  font-weight: 600;
+  direction: rtl;
+  left: 5px;
+}
+
+#coworkers-report-button {
+  animation-name: slideRtL;
+  animation-duration: 3s;
+  position: absolute;
+}
+
+#customers-report-button {
+  animation-name: slideLtR;
+  animation-duration: 3s;
+  position: absolute;
+}
+
+#coworkers-button {
+  animation-name: slideTtD;
+  animation-duration: 3s;
+  position: absolute;
+}
+
+#customers-button {
+  animation-name: slideDtT;
+  animation-duration: 3s;
+  position: absolute;
+}
+
+@keyframes slideDtT {
+  0% {
+    top: 500px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes slideTtD {
+  0% {
+    bottom: 500px;
+  }
+  100% {
+    bottom: -101px;
+  }
+}
+
+@keyframes slideRtL {
+  0% {
+    left: 500px;
+    visibility: hidden;
+  }
+  42% {
+    left: 500px;
+    visibility: visible;
+  }
+  100% {
+    left: 5px;
+  }
+}
+
+@keyframes slideLtR {
+  0% {
+    right: 500px;
+    visibility: hidden;
+  }
+  42% {
+    right: 500px;
+    visibility: visible;
+  }
+  100% {
+    right: 5px;
+  }
+}
+
+#coworkers-col {
+  text-align: center!important;
+}
+
+#customers-button {
+  border-radius: 0 0 200px 200px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#coworkers-button {
+  border-radius: 200px 200px 0 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#footer {
+  text-align: center;
+  direction: rtl;
+  color: white;
+  font-size: small;
+}
+
+body {
+  overflow: hidden;
+}
+
+#reports {
+  overflow: hidden;
+  min-height: 50px;
+}
+
+#coworkers-customers {
+  overflow: hidden;
+  min-height: 210px;
+}
+
+#collapsicon-heading {
+  text-align: right;
+}
+
+#collaps-heading {
+  font-size: 17px;
+  font-family: 'B Nazanin';
+  font-weight: 600;
+}
+
+#kindsofcustomers {
+  font-family: 'B Nazanin';
+  font-size: 21px;
+  font-weight: 600;
+}
+
+#kindsofcustomers-links {
+  color: rgb(245,176,71)!important;
+  border-radius: 6px!important;
+}
+
+#addpeople {
+  text-align: center;
+}
+
+#addpeople-button {
+  border-radius: 7px!important;
+}
+
+#posiblecustomers-row {
+  border-color: gray!important;
+  border-width: 5px!important;
+}
+
+#image-div {
+  border-radius: 100px 0 0 100px;
+  text-align: center!important;
+}
+
+#img-customers {
+  border-color: yellow!important;
+  border-width: medium!important;
+}
+
+#posiblecustomers {
+  font-family: 'B Nazanin';
+}
+
+#opration-button {
+  border-radius: 7px;
+  font-family: 'B Nazanin';
+  font-size: 21px;
+  font-weight: 5000;
+  color: rgb(0,0,69);
+}
+
+#deleteandname-col {
+  border-style: groove;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+}
+
+#img-customers {
+  border-style: groove;
+  border-color: yellow;
+  height: 110px;
+  width: 110px;
+}
+
+#posiblecustomers-row {
+  border: groove;
+  border-color: rgb(211,211,211)!important;
+  border-width: 3px!important;
+  border-radius: 12px 0 0 12px;
+}
+
+@media (max-width: 400px) {
+  #img-customers {
+    width: 90px!important;
+    height: 90px!important;
+  }
+}
+
+#customers-tabitems {
+  border-radius: 8px!important;
+  border-color: rgb(237,158,38)!important;
+  border-width: medium;
+  background-color: #174f8c;
+}
+
+#icononimage {
+  position: relative;
+  height: 35px;
+  width: 35px;
+  border-style: groove;
+  border-color: yellow;
+}
+
+body {
+  direction: rtl;
+}
+
