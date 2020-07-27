@@ -9,6 +9,7 @@
 #customers-report-button {
   border-radius: 50px 0px 0px 50px;
   color: rgb(255,214,0);
+  border-color: rgb(255,214,0);
   font-size: 16px;
   font-weight: 600;
   right: 5px;
@@ -17,33 +18,33 @@
 #coworkers-report-button {
   border-radius: 0px 50px 50px 0px;
   color: rgb(255,214,0);
+  border-color: rgb(255,214,0);
   font-size: 16px;
   font-weight: 600;
-  direction: rtl;
   left: 5px;
 }
 
 #coworkers-report-button {
   animation-name: slideRtL;
-  animation-duration: 3s;
+  animation-duration: 2s;
   position: absolute;
 }
 
 #customers-report-button {
   animation-name: slideLtR;
-  animation-duration: 3s;
+  animation-duration: 2s;
   position: absolute;
 }
 
 #coworkers-button {
   animation-name: slideTtD;
-  animation-duration: 3s;
+  animation-duration: 2s;
   position: absolute;
 }
 
 #customers-button {
   animation-name: slideDtT;
-  animation-duration: 3s;
+  animation-duration: 2s;
   position: absolute;
 }
 
@@ -111,13 +112,12 @@
 
 #footer {
   text-align: center;
-  direction: rtl;
   color: white;
   font-size: small;
 }
 
 body {
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 #reports {
@@ -142,7 +142,7 @@ body {
 
 #kindsofcustomers {
   font-family: 'B Nazanin';
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 600;
 }
 
@@ -203,8 +203,9 @@ body {
 #posiblecustomers-row {
   border: groove;
   border-color: rgb(211,211,211)!important;
-  border-width: 3px!important;
+  border-width: 2px!important;
   border-radius: 12px 0 0 12px;
+  box-shadow: 0 2px 4px 0;
 }
 
 @media (max-width: 400px) {
@@ -216,7 +217,14 @@ body {
 
 #customers-tabitems {
   border-radius: 8px!important;
-  border-color: rgb(237,158,38)!important;
+  border-color: rgb(255,214,0)!important;
+  border-width: medium;
+  background-color: rgb(36,105,179);
+  box-shadow: 0 2px 4px 0;
+}
+
+#customers-edit {
+  border-radius: 8px!important;
   border-width: medium;
   background-color: #174f8c;
 }
@@ -225,11 +233,132 @@ body {
   position: relative;
   height: 35px;
   width: 35px;
-  border-style: groove;
-  border-color: yellow;
 }
 
 body {
   direction: rtl;
+}
+
+#imageedit-div {
+  text-align: center;
+}
+
+#image-edit {
+  text-align: center!important;
+  border-color: blue!important;
+}
+
+#sapn-edit {
+  border-radius: 0 0 0 0;
+}
+
+#saveandexit {
+  text-align: center;
+}
+
+#save {
+  border-radius: 50px 0 0 50px;
+}
+
+#exit {
+  border-radius: 0 50px 50px 0;
+  color: white;
+}
+
+#addform {
+  text-align: center;
+}
+
+#addform-button {
+  font-weight: 400;
+  background-color: rgb(36,105,179);
+}
+
+#formsitem-row {
+  border-style: groove;
+  box-shadow: 0 2px 4px 0;
+  border-radius: 8px;
+  border-color: #d3d3d3;
+  border-width: 1px;
+}
+
+#firstpageeducation-row {
+  border-style: groove;
+  box-shadow: 0 2px 4px 0;
+  border-radius: 8px;
+  border-color: #d3d3d3;
+  border-width: 1px;
+}
+
+#secondpageeducation-row {
+  border-style: groove;
+  box-shadow: 0 2px 4px 0;
+  border-radius: 8px;
+  border-color: #d3d3d3;
+  border-width: 1px;
+}
+
+#reports-row {
+}
+
+#reports-div {
+  border-style: groove;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+.card-header:first-child {
+  /*border: none;*/
+}
+
+#accordion-1 {
+  text-align: right;
+}
+
+.text-right {
+  text-decoration: none!important;
+}
+
+#accordion-1 {
+  border: none!important;
+}
+
+#moredetaim-accordionitem {
+  /*border: none;*/
+}
+
+#firstpageeducation-heading {
+  font-weight: 300;
+  font-size: 11px!important;
+}
+
+#secondpageeducation-heading {
+  font-weight: 300;
+  font-size: 14px!important;
+}
+
+#firstpageeducation-heading-1 {
+  font-weight: 600;
+  font-size: 11px;
+}
+
+#secondpageeducation-heading-1 {
+  font-weight: 500;
+  font-size: smaller;
+}
+
+#img-firstpageeducation {
+  border-style: groove;
+  border-color: yellow;
+}
+
+#img-secondpageeducation {
+  border-style: groove;
+  border-color: yellow;
+}
+
+#education-button {
+  font-weight: 600;
+  box-shadow: 0px 0px 5px 0px;
 }
 
