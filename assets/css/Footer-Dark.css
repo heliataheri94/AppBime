@@ -140,3 +140,16 @@
   margin-bottom: 12px;
 }
 
+#firstpageeducation-link {
+  text-decoration: none;
+  color: rgb(0,0,0);
+}
+
+#secondpageeducation-div {
+  margin-top: 15px;
+}
+
+#firstpageeducation-div {
+  margin-top: 15px;
+}
+
