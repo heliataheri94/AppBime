@@ -117,7 +117,6 @@
 }
 
 body {
-  /*overflow: hidden;*/
 }
 
 #reports {
@@ -308,7 +307,6 @@ body {
 }
 
 .card-header:first-child {
-  /*border: none;*/
 }
 
 #accordion-1 {
@@ -324,11 +322,9 @@ body {
 }
 
 #moredetaim-accordionitem {
-  /*border: none;*/
 }
 
 #firstpageeducation-heading {
-  font-weight: 300;
   font-size: 11px!important;
 }
 
@@ -360,5 +356,79 @@ body {
 #education-button {
   font-weight: 600;
   box-shadow: 0px 0px 5px 0px;
+}
+
+#formsitem-div {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.progress {
+  width: 150px;
+  height: 150px;
+  background: none;
+  position: relative;
+}
+
+.progress::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 6px solid #eee;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress > span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.progress .progress-left {
+  left: 0;
+}
+
+.progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 6px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+}
+
+.progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+
+.progress .progress-right {
+  right: 0;
+}
+
+.progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+}
+
+.progress .progress-value {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
