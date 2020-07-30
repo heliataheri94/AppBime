@@ -1,7 +1,12 @@
 #collapsicon-div {
   text-align: right;
 }
-
+.Collapse-Button{
+  background-color: rgb(245,176,71);
+  margin-top: 4px;
+  margin-right: -8px;
+  border: none;
+}
 #customers-report {
   text-align: right;
 }
@@ -13,6 +18,15 @@
   font-size: 16px;
   font-weight: 600;
   right: 5px;
+  animation-name: slideLtR;
+  animation-duration: 2s;
+  position: absolute;
+  width: 150px;height: 50px;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-family: 'B Nazanin';
+  background-color: rgb(36,105,179);
+  box-shadow: 0 1px 5px 0;
 }
 
 #coworkers-report-button {
@@ -22,30 +36,32 @@
   font-size: 16px;
   font-weight: 600;
   left: 5px;
-}
-
-#coworkers-report-button {
   animation-name: slideRtL;
   animation-duration: 2s;
   position: absolute;
-}
+  width: 150px;
+  height: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: 'B Nazanin';
+  background-color: rgb(36,105,179);
+  box-shadow: 0 1px 5px 0;
 
-#customers-report-button {
-  animation-name: slideLtR;
-  animation-duration: 2s;
-  position: absolute;
 }
 
 #coworkers-button {
   animation-name: slideTtD;
   animation-duration: 2s;
   position: absolute;
-}
-
-#customers-button {
-  animation-name: slideDtT;
-  animation-duration: 2s;
-  position: absolute;
+  border-radius: 200px 200px 0 0;
+  font-size: 20px;
+  font-weight: 600;
+  width: 198px;height: 102px;
+  background-color: rgb(36,105,179);
+  font-family: 'B Nazanin';
+  color: rgb(255,214,0);
+  border-color: rgb(255,214,0);
+  box-shadow: 0 -1px 5px 0;
 }
 
 @keyframes slideDtT {
@@ -102,31 +118,47 @@
   border-radius: 0 0 200px 200px;
   font-size: 20px;
   font-weight: 600;
+  animation-name: slideDtT;
+  animation-duration: 2s;
+  position: absolute;
+  width: 198px;
+  height: 102px;
+  background-color: rgb(36,105,179);
+  font-family: 'B Nazanin';
+  color: rgb(255,214,0);
+  border-color: rgb(255,214,0);
+  box-shadow: 0 1px 5px 0;
 }
 
-#coworkers-button {
-  border-radius: 200px 200px 0 0;
-  font-size: 20px;
-  font-weight: 600;
-}
+.Fotter-Pishtazan{
 
-#footer {
   text-align: center;
   color: white;
   font-size: small;
+  height: 37px;
+  background-color: #2469b3;
+  margin-top: 0;
+  width: 100%;
 }
-
-body {
+.Fotter-Paragraph{
+  margin-bottom: 0;
+  font-family: 'B Nazanin';
+  padding-top: 12px;
+}
+#firstpageeducation-section{
+  margin-top: 57px;
 }
 
 #reports {
   overflow: hidden;
   min-height: 50px;
+  margin-top: 28px;
 }
 
 #coworkers-customers {
   overflow: hidden;
   min-height: 210px;
+  margin-top: 30px;
 }
 
 #collapsicon-heading {
@@ -163,10 +195,14 @@ body {
   border-width: 5px!important;
 }
 
-#image-div {
+.Set-Image-InEducationPage-Div{
   border-radius: 100px 0 0 100px;
   text-align: center!important;
+  background-color: rgb(36,105,179);
+  height: 66px;
+  width: 69px;
 }
+
 
 #img-customers {
   border-color: yellow!important;
@@ -281,12 +317,17 @@ body {
   border-width: 1px;
 }
 
-#firstpageeducation-row {
+.FirstPageEducation-Row {
   border-style: groove;
   box-shadow: 0 2px 4px 0;
   border-radius: 8px;
   border-color: #d3d3d3;
   border-width: 1px;
+}
+
+.Set-Image-InEducationPage-Col{
+  padding-right: 0px;
+  padding-left: 15px;
 }
 
 #secondpageeducation-row {
@@ -295,9 +336,6 @@ body {
   border-radius: 8px;
   border-color: #d3d3d3;
   border-width: 1px;
-}
-
-#reports-row {
 }
 
 #reports-div {
@@ -321,11 +359,10 @@ body {
   border: none!important;
 }
 
-#moredetaim-accordionitem {
-}
-
-#firstpageeducation-heading {
+.Heading-InEducationPage1 {
   font-size: 11px!important;
+  margin-bottom: 13px;
+  margin-top: 7px;
 }
 
 #secondpageeducation-heading {
@@ -333,7 +370,7 @@ body {
   font-size: 14px!important;
 }
 
-#firstpageeducation-heading-1 {
+.Heading-InEducationPage2 {
   font-weight: 600;
   font-size: 11px;
 }
@@ -343,9 +380,12 @@ body {
   font-size: smaller;
 }
 
-#img-firstpageeducation {
+.Image-EducationPage{
   border-style: groove;
   border-color: yellow;
+  margin-right: -2px;
+  width: 60px;
+  height: 60px;
 }
 
 #img-secondpageeducation {
@@ -356,6 +396,12 @@ body {
 #education-button {
   font-weight: 600;
   box-shadow: 0px 0px 5px 0px;
+  width: 100px;
+  height: 100px;
+  color: rgb(12,77,147);
+  background-color: rgb(255,233,117);
+  font-family: 'B Nazanin';
+  font-size: 17px;padding-top: 14px;
 }
 
 #formsitem-div {
