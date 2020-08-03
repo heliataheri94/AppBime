@@ -7,6 +7,9 @@
   margin-right: -8px;
   border: none;
 }
+.Collapse-Button>i{
+padding-top: 6px;
+}
 #customers-report {
   text-align: right;
 }
@@ -383,6 +386,13 @@
   background-color: rgb(249,83,73);
 }
 
+.ButtonExit-Delete{
+  margin-right: 7px;
+  width: 100%;
+  font-family: 'B Nazanin';
+  font-size: 20px;
+  background-color: rgb(249,83,73);
+}
 .Buttonsave{
   margin-right: 7px;
   width: 116px;
