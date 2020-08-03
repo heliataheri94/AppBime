@@ -46,7 +46,6 @@
   font-family: 'B Nazanin';
   background-color: rgb(36,105,179);
   box-shadow: 0 1px 5px 0;
-
 }
 
 #coworkers-button {
@@ -140,21 +139,97 @@
   margin-top: 0;
   width: 100%;
 }
+
 .Fotter-Paragraph{
   margin-bottom: 0;
   font-family: 'B Nazanin';
   padding-top: 12px;
 }
+
 #firstpageeducation-section{
   margin-top: 57px;
 }
 
-#reports {
+.FirstPageEducation-LaptopIcon{
+  color: rgb(36,105,179);
+  font-size: 22px;
+}
+
+.SecondPageOfEducation-VideoIcon{
+  color: rgb(36,105,179);
+  font-size: 18px;
+}
+
+.SecondPageOfEducation-ListOfVideoIcon{
+  margin-bottom: 9px;
+  margin-left: 3px;
+  color: rgba(18,60,105,0.7);
+}
+
+.TopHeading-Container{
+  margin-top: 40px;
+  background-color: #ffffff;
+  height: 121px;"
+}
+
+.TitleOfPage{
+  padding: 0;
+  margin: 12px;
+  margin-top: 2px;
+}
+
+.BoxOfReports-Detail{
+  margin-top: 173px;
+  margin-bottom: 99px;
+}
+
+.Reports_Icon{
+  width: 30px;
+  height: 30px;
+}
+
+.Reports-Text{
+  margin-top: 13px;
+  margin-right: -14px;
+}
+.Imege-Reports{
+  width: 30px;
+  height: 30px;
+  margin-top: 7px;
+  margin-left: 14px;
+}
+
+.Text-Report{
+  color: rgb(12,77,147);
+  font-size: 12px;
+}
+#reports-inbegining {
   overflow: hidden;
   min-height: 50px;
   margin-top: 28px;
+ 
 }
 
+#reports {
+
+  border-style: groove;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+#cell1{
+  font-size: 10px;
+  padding: 7px;
+}
+
+#cell2{
+  height: 27px;
+  font-size: 10px;
+  padding: 7px;
+}
+.MoreDetail-Col{
+  margin-top: -68px;
+  
+}
 #coworkers-customers {
   overflow: hidden;
   min-height: 210px;
@@ -202,8 +277,17 @@
   height: 66px;
   width: 69px;
 }
-
-
+.Set-Image-InquestionnairePage-Div{
+  border-radius: 100px 0 0 100px;
+  text-align: center!important;
+  background-color: rgb(36,105,179);
+  height: 66px;
+  
+}
+#image-div-inquestionnaire{
+  background-color: #bfbfbf;
+  height: 132px;
+}
 #img-customers {
   border-color: yellow!important;
   border-width: medium!important;
@@ -250,6 +334,30 @@
   }
 }
 
+#carsoul-row{
+  margin-right:20px;
+  margin-left:20px
+}
+
+.Carsoul-Image{
+  height: 50px;
+  width:50px;
+  margin-top: 10px;
+  margin-bottom:10px
+}
+
+#start-exam-button{
+  font-size: 17px;
+  width: 60%;
+  background-color: #2469b3;
+  color: rgb(255,255,255);
+}
+
+.Question-Style{
+  background-color: rgb(113, 238, 247);
+  display: none;
+  position: relative;
+}
 #customers-tabitems {
   border-radius: 8px!important;
   border-color: rgb(255,214,0)!important;
@@ -258,10 +366,28 @@
   box-shadow: 0 2px 4px 0;
 }
 
-#customers-edit {
+.ButtonExit-InAddPeople{
+  margin-right: 7px;
+  width: 116px;
+  font-family: 'B Nazanin';
+  font-size: 20px;
+  background-color: rgb(249,83,73);
+}
+
+.Buttonsave-InAddPeople{
+  margin-right: 7px;
+  width: 116px;
+  font-family: 'B Nazanin';
+  font-size: 20px;
+}
+
+.SetLevel-NavBar {
   border-radius: 8px!important;
   border-width: medium;
   background-color: #174f8c;
+  padding-right: 6px;
+  padding-left: 6px;
+  height: 75px;
 }
 
 #icononimage {
@@ -272,6 +398,7 @@
 
 body {
   direction: rtl;
+  font-family: 'B Nazanin';
 }
 
 #imageedit-div {
@@ -283,8 +410,23 @@ body {
   border-color: blue!important;
 }
 
-#sapn-edit {
+.InputGroup-AddQustionnair {
   border-radius: 0 0 0 0;
+  background-color: rgb(15,71,128);
+}
+
+.Save-Questionnaire{
+  background-color: rgb(15,71,128);
+  color: rgb(255,255,255);
+  font-family: 'B Nazanin';
+  font-size: 16px;
+  width: 194px;
+  height: 34px;
+}
+
+.Icon-InAddPeople{
+  font-size: 25px;
+  color: rgb(255,220,36);
 }
 
 #saveandexit {
@@ -307,6 +449,10 @@ body {
 #addform-button {
   font-weight: 400;
   background-color: rgb(36,105,179);
+  margin: 27px;
+  font-family: 'B Nazanin';
+  font-size: 23px;
+  color: rgb(255,255,255);
 }
 
 #formsitem-row {
@@ -337,13 +483,36 @@ body {
   border-color: #d3d3d3;
   border-width: 1px;
 }
+.ExitLink-ChooseFromContact{
+  background-color:yellow;
+  text-align:center;
+  font-size:20px;
+  font-family:B Nazanin; 
+  font-weight:700 
 
-#reports-div {
-  border-style: groove;
-  border-radius: 8px;
-  margin-top: 8px;
 }
 
+
+.NameAndFamily-ChooseContact{
+  font-size:11px;
+  color:gray;
+}
+
+.PhoneNumber-ChooseContact
+{
+  font-size:11px;
+  color:gray;
+  margin-top:-10px
+}
+
+.ChooseFromContact-Button{
+  width:100%;
+  font-size:18px;
+  font-family:B Nazanin;
+   background-color:rgb(36,105,179);
+  font-weight:500; 
+  color:white
+}
 .card-header:first-child {
 }
 
@@ -360,24 +529,15 @@ body {
 }
 
 .Heading-InEducationPage1 {
-  font-size: 11px!important;
+  font-size: 15px!important;
   margin-bottom: 13px;
   margin-top: 7px;
 }
 
-#secondpageeducation-heading {
-  font-weight: 300;
-  font-size: 14px!important;
-}
-
 .Heading-InEducationPage2 {
   font-weight: 600;
-  font-size: 11px;
-}
-
-#secondpageeducation-heading-1 {
-  font-weight: 500;
-  font-size: smaller;
+  font-size: 15px;
+  margin-top: -7px;
 }
 
 .Image-EducationPage{
@@ -478,3 +638,16 @@ body {
   left: 0;
 }
 
+.moreDetail-Collaps-Col{
+  margin: 12px;
+  margin-top: 35px;
+  margin-left: 0;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+
+.ExamSlider{
+  overflow: hidden;
+ 
+}
