@@ -26,11 +26,18 @@
           <div id="collapsicon-div"><button class="btn Collapse-Button active rounded-circle" id="collapsicon-button"
               type="button"><i class="fa fa-align-justify text-light"></i></button></div>
         </div>
-        <div class="col-9" id="collapsicon-heading">
+        <div class="col-6" id="collapsicon-heading">
           <h1 class="d-flex justify-content-start align-items-center" id="collaps-heading"
             style="padding-top: 10px;color: rgb(23,79,140);padding-right: 27px;"><i class="fa fa-user-circle"
               style="font-size: 24px;color: rgb(23,79,140);"></i>&nbsp;پنل مشتریان</h1>
         </div>
+        <div class="col-3 text-left" id="back-col">
+          <div id="back-div">
+              <a class="Back-Button " id="Back-button" >
+              <i class="fa fa-angle-left fa-2x text-info font-weight-bold pt-1"></i>
+          </a>
+      </div>
+      </div>
       </div>
     </div>
   </section>
@@ -39,15 +46,15 @@
     <div id="customers-tab-heading">
       <ul class="nav nav-tabs d-flex flex-grow-1 justify-content-between" id="customers-tabitems"
         style="padding-right: 6px;padding-left: 6px;">
-        <li class="nav-item flex-fill" id="kindsofcustomers-tabs" style="margin: 5px;margin-right: -1px;"><a
+        <li class="nav-item flex-fill p-1" id="kindsofcustomers-tabs" ><a
             class="nav-link text-center flex-fill" role="tab" data-toggle="tab" id="kindsofcustomers-links"
             href="#tab-1" style="color: rgb(255,214,0);">بالقوه</a></li>
-        <li class="nav-item flex-fill" id="kindsofcustomers-tabs" style="margin: 5px;"><a
+        <li class="nav-item flex-fill p-1" id="kindsofcustomers-tabs" ><a
             class="nav-link active text-center flex-fill" role="tab" data-toggle="tab" id="kindsofcustomers-links"
             href="#tab-2" style="color: rgb(255,214,0);">احتمالی</a></li>
-        <li class="nav-item flex-fill" id="kindsofcustomers-tabs" style="margin-left: 4px;"><a
+        <li class="nav-item flex-fill p-1" id="kindsofcustomers-tabs" ><a
             class="nav-link text-center flex-fill" role="tab" data-toggle="tab" id="kindsofcustomers-links"
-            href="#tab-3" style="margin: 5px;color: rgb(255,214,0);">قطعی</a></li>
+            href="#tab-3" style="color: rgb(255,214,0);">قطعی</a></li>
       </ul>
       <div class="tab-content" id="pagesaboutcustomers" style="background-color: #ffffff;">
         <div class="tab-pane" role="tabpanel" id="tab-1">
@@ -100,12 +107,12 @@
                                     <div class="row">
                                       <div class="col-6">
                                         <button type="button" data-dismiss="modal"
-                                          class="btn btn-secondary ButtonExit "><i
-                                            class="fa fa-times"></i>&nbsp;&nbsp;&nbsp;&nbsp;بیخیال</button>
+                                          class="btn btn-secondary ButtonExit-Delete "><i
+                                            class="fa fa-times"></i>&nbsp;&nbsp;بیخیال</button>
                                       </div>
                                       <div class="col-6">
                                         <button type="button"
-                                          class="btn btn-primary Buttonyes">بلی&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                          class="btn btn-primary Buttonyes">بلی&nbsp;&nbsp;<i
                                             class="fas fa-check"></i></button>
                                       </div>
                                     </div>
@@ -277,7 +284,7 @@
                                     <div class="modal-footer d-inline p-0 text-center">
                                       <div class="row">
                                         <div class="col-6">
-                                          <button type="button" class="btn btn-secondary ButtonExit"
+                                          <button type="button" class="btn btn-secondary ButtonExit-Delete"
                                             onclick="$('#delete-link').modal('hide')"><i
                                               class="fa fa-times"></i>&nbsp;&nbsp;&nbsp;&nbsp;بیخیال</button>
                                         </div>
@@ -353,6 +360,7 @@
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/js/circularProgressBar.js"></script>
   <script src="assets/js/ExamSlider.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
