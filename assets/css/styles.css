@@ -277,6 +277,15 @@
   height: 66px;
   width: 69px;
 }
+.Set-Image-CustomersPage-Div{
+  border-radius: 100px 12px 12px 100px;
+  text-align: center!important;
+  background-color: rgb(36,105,179);
+  height: 66px;
+  
+  background-color: #bfbfbf;
+  height: 110px;
+}
 .Set-Image-InquestionnairePage-Div{
   border-radius: 100px 0 0 100px;
   text-align: center!important;
@@ -323,14 +332,14 @@
   border: groove;
   border-color: rgb(211,211,211)!important;
   border-width: 2px!important;
-  border-radius: 12px 0 0 12px;
+  border-radius: 12px 12px 12px 12px;
   box-shadow: 0 2px 4px 0;
 }
 
 @media (max-width: 400px) {
   #img-customers {
-    width: 90px!important;
-    height: 90px!important;
+    width: 75px!important;
+    height: 75px!important;
   }
 }
 
@@ -366,7 +375,7 @@
   box-shadow: 0 2px 4px 0;
 }
 
-.ButtonExit-InAddPeople{
+.ButtonExit{
   margin-right: 7px;
   width: 116px;
   font-family: 'B Nazanin';
@@ -374,7 +383,7 @@
   background-color: rgb(249,83,73);
 }
 
-.Buttonsave-InAddPeople{
+.Buttonsave{
   margin-right: 7px;
   width: 116px;
   font-family: 'B Nazanin';
@@ -650,4 +659,37 @@ body {
 .ExamSlider{
   overflow: hidden;
  
+}
+.ChooseOperation-InCustomerspanel{
+  width:150px;
+  font-size:18px;
+  font-family:B Nazanin;
+   background-color:rgb(36,105,179);
+   font-weight:500; 
+   color:white;
+}
+.ChooseDateAndTime-Collaps{
+  display:block;
+   font-size:25px;
+   font-family:B Nazanin;
+    font-weight:700
+}
+.Buttonyes{
+  font-size:20px;
+  font-family:B Nazanin;
+   font-weight:500;
+   width:100%
+}
+.Bikhial-Link{
+  background-color:yellow;
+  text-align:center;
+  font-size:20px;
+  font-family:B Nazanin;
+  font-weight:700
+}
+.Trashbin-Icon{
+  width:auto;
+  font-size:18px;
+  font-family:B Nazanin;
+   color:red
 }
