@@ -2,282 +2,466 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>AppBime</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/B%20Nazanin.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
-    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="assets/css/MultiItemCarousel.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>AppBime</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/B%20Nazanin.css">
+  <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+  <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+  <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+  <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="assets/css/MultiItemCarousel.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
-    <section id="collaps-section">
-        <div class="container-fluid">
-            <div class="row" id="collaps-icon">
-                <div class="col" id="collapsicon-col">
-                    <div id="collapsicon-div"><button class="btn btn-primary active rounded-circle" id="collapsicon-button" type="button" style="background-color: rgb(245,176,71);margin-top: 4px;margin-right: -8px;border: none;"><i class="fa fa-align-justify"></i></button></div>
-                </div>
-            </div>
+  <!--دکمه بالای صفحه که در همه صفحه ها وجود دارد-->
+  <section id="collaps-section" class="fixed-top" style="background-color: #ffffff;">
+    <div class="container-fluid">
+      <div class="row" id="collaps-icon">
+        <div class="col" id="collapsicon-col">
+          <div id="collapsicon-div"><button class="btn Collapse-Button active rounded-circle" id="collapsicon-button"
+              type="button"><i class="fa fa-align-justify text-light"></i></button></div>
         </div>
-    </section>
-    <section id="edit" style="margin-top: 60px;">
-        <div class="container" style="padding-right: 31px;padding-left: 31px;">
-            <div class="row">
-                <div class="col" id="choosefromcontact"><!-- Button trigger modal -->
-<button type="button"class="btn  mt-2"style="width:100%;font-size:18px;font-family:B Nazanin; background-color:rgb(36,105,179);font-weight:500; color:white" data-toggle="modal" data-target="#choosecontact"><i class="fa fa-address-book" style="font-size:20px;color:rgb(255,220,36)"></i>
-  &nbsp;&nbsp;انتخاب از لیست مخاطبین
-</button>
+      </div>
+    </div>
+  </section>
+  <!--------------------------------------------------->
+  <section id="edit" style="margin-top: 60px;">
+    <div class="container px-4">
+      <div class="row">
+        <div class="col" id="choosefromcontact">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn  mt-2 ChooseFromContact-Button" data-toggle="modal" data-target="#choosecontact">
+            <i class="fa fa-address-book" style="font-size:20px;color:rgb(255,220,36)"></i>
+            &nbsp;&nbsp;انتخاب از لیست مخاطبین
+          </button>
 
-<!-- Modal -->
+          <!-- Modal -->
 
-<div class="modal fade" id="choosecontact" tabindex="-1" role="dialog" aria-labelledby="choosecontactTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content" style="text-align:right">
-        <div class="modal-body" style="background-color:#e4e4e4">
- <div class="input-group fixed mb-3">
-  <div class="input-group-prepend"style="background-color:rgb(36,105,179)">
-    <span class="input-group-text"style="background-color:rgb(36,105,179)" id="basic-addon1"><i class="fa fa-search" style="font-size:20px;color:rgb(255,220,36)"></i></span>
-  </div>
-  <input type="text" class="form-control" placeholder="جستوجوی مخاطب" aria-label="contactsearch" aria-describedby="basic-addon1">
-</div>
-            <section style="height:400px;overflow: scroll">
-       <div class="container " >
-  <div class="row border border-secondary rounded" style="background-color:white">
-    <div class="col-2 pr-1">
-     
-            
-  <img src="assets/img/user%20(1).svg" class="img-circle mt-3 ml-2 rounded-circle border border-warning " style="border-width:5px" alt="userimage" width="50px" height="50px"> 
-</div>
-    
-    <div class="col-10">
-       <div class="row">
-    <div class="col-12">
-        <p class="mt-2 mb-0" style="font-size:11px;color:gray">نام و نام خانوادگی</p>
-    
-        <hr>
-    </div>
-           
-    <div class="col-12">
-    <p  style="font-size:11px;color:gray;margin-top:-10px">تلفن </p>
-    </div>
-    </div>
-    </div>
-  </div>
-           <div class="row border border-secondary rounded " style="background-color:white;margin-top:15px">
-    <div class="col-2 pr-1">
-     
-            
-  <img src="assets/img/user%20(1).svg" class="img-circle mt-3 ml-2 rounded-circle border border-warning " style="border-width:5px" alt="userimage" width="50px" height="50px"> 
-</div>
-    
-    <div class="col-10">
-       <div class="row">
-    <div class="col-12">
-        <p class="mt-2 mb-0" style="font-size:11px;color:gray">نام و نام خانوادگی</p>
-    
-        <hr>
-    </div>
-           
-    <div class="col-12">
-    <p  style="font-size:11px;color:gray;margin-top:-10px">تلفن </p>
-    </div>
-    </div>
-    </div>
-  </div>
-             <div class="row border border-secondary rounded " style="background-color:white;margin-top:15px">
-    <div class="col-2 pr-1">
-     
-            
-  <img src="assets/img/user%20(1).svg" class="img-circle mt-3 ml-2 rounded-circle border border-warning " style="border-width:5px" alt="userimage" width="50px" height="50px"> 
-</div>
-    
-    <div class="col-10">
-       <div class="row">
-    <div class="col-12">
-        <p class="mt-2 mb-0" style="font-size:11px;color:gray">نام و نام خانوادگی</p>
-    
-        <hr>
-    </div>
-           
-    <div class="col-12">
-    <p  style="font-size:11px;color:gray;margin-top:-10px">تلفن </p>
-    </div>
-    </div>
-    </div>
-  </div>
-             <div class="row border border-secondary rounded " style="background-color:white;margin-top:15px">
-    <div class="col-2 pr-1">
-     
-            
-  <img src="assets/img/user%20(1).svg" class="img-circle mt-3 ml-2 rounded-circle border border-warning " style="border-width:5px" alt="userimage" width="50px" height="50px"> 
-</div>
-    
-    <div class="col-10">
-       <div class="row">
-    <div class="col-12">
-        <p class="mt-2 mb-0" style="font-size:11px;color:gray">نام و نام خانوادگی</p>
-    
-        <hr>
-    </div>
-           
-    <div class="col-12">
-    <p  style="font-size:11px;color:gray;margin-top:-10px">تلفن </p>
-    </div>
-    </div>
-    </div>
-  </div>
-             <div class="row border border-secondary rounded " style="background-color:white;margin-top:15px">
-    <div class="col-2 pr-1">
-     
-            
-  <img src="assets/img/user%20(1).svg" class="img-circle mt-3 ml-2 rounded-circle border border-warning " style="border-width:5px" alt="userimage" width="50px" height="50px"> 
-</div>
-    
-    <div class="col-10">
-       <div class="row">
-    <div class="col-12">
-        <p class="mt-2 mb-0" style="font-size:11px;color:gray">نام و نام خانوادگی</p>
-    
-        <hr>
-    </div>
-           
-    <div class="col-12">
-    <p  style="font-size:11px;color:gray;margin-top:-10px">تلفن </p>
-    </div>
-    </div>
-    </div>
-  </div>
-             <div class="row border border-secondary rounded " style="background-color:white;margin-top:15px">
-    <div class="col-2 pr-1">
-     
-            
-  <img src="assets/img/user%20(1).svg" class="img-circle mt-3 ml-2 rounded-circle border border-warning " style="border-width:5px" alt="userimage" width="50px" height="50px"> 
-</div>
-    
-    <div class="col-10">
-       <div class="row">
-    <div class="col-12">
-        <p class="mt-2 mb-0" style="font-size:11px;color:gray">نام و نام خانوادگی</p>
-    
-        <hr>
-    </div>
-           
-    <div class="col-12">
-    <p  style="font-size:11px;color:gray;margin-top:-10px">تلفن </p>
-    </div>
-    </div>
-    </div>
-  </div>
-             <div class="row border border-secondary rounded " style="background-color:white;margin-top:15px">
-    <div class="col-2 pr-1">
-     
-            
-  <img src="assets/img/user%20(1).svg" class="img-circle mt-3 ml-2 rounded-circle border border-warning " style="border-width:5px" alt="userimage" width="50px" height="50px"> 
-</div>
-    
-    <div class="col-10">
-       <div class="row">
-    <div class="col-12">
-        <p class="mt-2 mb-0" style="font-size:11px;color:gray">نام و نام خانوادگی</p>
-    
-        <hr>
-    </div>
-           
-    <div class="col-12">
-    <p  style="font-size:11px;color:gray;margin-top:-10px">تلفن </p>
-    </div>
-    </div>
-    </div>
-  </div>
-             <div class="row border border-secondary rounded " style="background-color:white;margin-top:15px">
-    <div class="col-2 pr-1">
-     
-            
-  <img src="assets/img/user%20(1).svg" class="img-circle mt-3 ml-2 rounded-circle border border-warning " style="border-width:5px" alt="userimage" width="50px" height="50px"> 
-</div>
-    
-    <div class="col-10">
-       <div class="row">
-    <div class="col-12">
-        <p class="mt-2 mb-0" style="font-size:11px;color:gray">نام و نام خانوادگی</p>
-    
-        <hr>
-    </div>
-           
-    <div class="col-12">
-    <p  style="font-size:11px;color:gray;margin-top:-10px">تلفن </p>
-    </div>
-    </div>
-    </div>
-  </div>
-          
-</div>
-                
-       </section>      
- 
-</div>
-            
-      <a class="modal-footer button p-3 d-flex justify-content-center "  data-dismiss="modal"style="background-color:yellow;text-align:center;font-size:20px;font-family:B Nazanin; font-weight:700  "> بیخیال
-       
-         
-        </a>
-    </div>
-  </div>
-</div>
-   </div>
-                <div class="col-12" style="margin-top: 39px;">
-                    <div class="input-group">
-                        <div class="input-group-prepend"><span class="input-group-text" id="sapn-edit" style="background-color: rgb(15,71,128);"><i class="fa fa-user" style="font-size: 25px;color: rgb(255,220,36);"></i></span></div><input class="form-control" type="text" placeholder="نام و نام خانوادگی">
-                        <div
-                            class="input-group-append"></div>
+          <div class="modal fade" id="choosecontact" tabindex="-1" role="dialog" aria-labelledby="choosecontactTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content" style="text-align:right">
+                <div class="modal-body" style="background-color:#e4e4e4">
+                  <div class="input-group fixed mb-3">
+                    <div class="input-group-prepend" style="background-color:rgb(36,105,179)">
+                      <span class="input-group-text" style="background-color:rgb(36,105,179)" id="basic-addon1">
+                        <i class="fa fa-search" style="font-size:20px;color:rgb(255,220,36)"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="جستوجوی مخاطب" aria-label="contactsearch"
+                      aria-describedby="basic-addon1">
+                  </div>
+                  <section style="height:400px;overflow: scroll">
+                    <div class="container ">
+                      <div class="row border border-secondary rounded bg-light mb-2" >
+                        <div class="col-2 pr-1">
+
+
+                          <img src="assets/img/user%20(1).svg"
+                            class="img-circle mt-3 ml-2 rounded-circle border border-warning " style="border-width:5px"
+                            alt="userimage" width="50px" height="50px">
+                        </div>
+
+                        <div class="col-10">
+                          <div class="row">
+                            <div class="col-12">
+                              <p class="mt-2 mb-0 NameAndFamily-ChooseContact" >نام و نام خانوادگی</p>
+
+                              <hr>
+                            </div>
+
+                            <div class="col-12">
+                              <p  class="PhoneNumber-ChooseContact">تلفن </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row border border-secondary rounded bg-light mb-2" >
+                        <div class="col-2 pr-1">
+
+
+                          <img src="assets/img/user%20(1).svg"
+                            class="img-circle mt-3 ml-2 rounded-circle border border-warning " style="border-width:5px"
+                            alt="userimage" width="50px" height="50px">
+                        </div>
+
+                        <div class="col-10">
+                          <div class="row">
+                            <div class="col-12">
+                              <p class="mt-2 mb-0 NameAndFamily-ChooseContact" >نام و نام خانوادگی</p>
+
+                              <hr>
+                            </div>
+
+                            <div class="col-12">
+                              <p  class="PhoneNumber-ChooseContact">تلفن </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div> <div class="row border border-secondary rounded bg-light mb-2" >
+                        <div class="col-2 pr-1">
+
+
+                          <img src="assets/img/user%20(1).svg"
+                            class="img-circle mt-3 ml-2 rounded-circle border border-warning " style="border-width:5px"
+                            alt="userimage" width="50px" height="50px">
+                        </div>
+
+                        <div class="col-10">
+                          <div class="row">
+                            <div class="col-12">
+                              <p class="mt-2 mb-0 NameAndFamily-ChooseContact" >نام و نام خانوادگی</p>
+
+                              <hr>
+                            </div>
+
+                            <div class="col-12">
+                              <p  class="PhoneNumber-ChooseContact">تلفن </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div> <div class="row border border-secondary rounded bg-light mb-2" >
+                        <div class="col-2 pr-1">
+
+
+                          <img src="assets/img/user%20(1).svg"
+                            class="img-circle mt-3 ml-2 rounded-circle border border-warning " style="border-width:5px"
+                            alt="userimage" width="50px" height="50px">
+                        </div>
+
+                        <div class="col-10">
+                          <div class="row">
+                            <div class="col-12">
+                              <p class="mt-2 mb-0 NameAndFamily-ChooseContact" >نام و نام خانوادگی</p>
+
+                              <hr>
+                            </div>
+
+                            <div class="col-12">
+                              <p  class="PhoneNumber-ChooseContact">تلفن </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div> <div class="row border border-secondary rounded bg-light mb-2" >
+                        <div class="col-2 pr-1">
+
+
+                          <img src="assets/img/user%20(1).svg"
+                            class="img-circle mt-3 ml-2 rounded-circle border border-warning " style="border-width:5px"
+                            alt="userimage" width="50px" height="50px">
+                        </div>
+
+                        <div class="col-10">
+                          <div class="row">
+                            <div class="col-12">
+                              <p class="mt-2 mb-0 NameAndFamily-ChooseContact" >نام و نام خانوادگی</p>
+
+                              <hr>
+                            </div>
+
+                            <div class="col-12">
+                              <p  class="PhoneNumber-ChooseContact">تلفن </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div> <div class="row border border-secondary rounded bg-light mb-2" >
+                        <div class="col-2 pr-1">
+
+
+                          <img src="assets/img/user%20(1).svg"
+                            class="img-circle mt-3 ml-2 rounded-circle border border-warning " style="border-width:5px"
+                            alt="userimage" width="50px" height="50px">
+                        </div>
+
+                        <div class="col-10">
+                          <div class="row">
+                            <div class="col-12">
+                              <p class="mt-2 mb-0 NameAndFamily-ChooseContact" >نام و نام خانوادگی</p>
+
+                              <hr>
+                            </div>
+
+                            <div class="col-12">
+                              <p  class="PhoneNumber-ChooseContact">تلفن </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div> <div class="row border border-secondary rounded bg-light mb-2" >
+                        <div class="col-2 pr-1">
+
+
+                          <img src="assets/img/user%20(1).svg"
+                            class="img-circle mt-3 ml-2 rounded-circle border border-warning " style="border-width:5px"
+                            alt="userimage" width="50px" height="50px">
+                        </div>
+
+                        <div class="col-10">
+                          <div class="row">
+                            <div class="col-12">
+                              <p class="mt-2 mb-0 NameAndFamily-ChooseContact" >نام و نام خانوادگی</p>
+
+                              <hr>
+                            </div>
+
+                            <div class="col-12">
+                              <p  class="PhoneNumber-ChooseContact">تلفن </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div> <div class="row border border-secondary rounded bg-light mb-2" >
+                        <div class="col-2 pr-1">
+
+
+                          <img src="assets/img/user%20(1).svg"
+                            class="img-circle mt-3 ml-2 rounded-circle border border-warning " style="border-width:5px"
+                            alt="userimage" width="50px" height="50px">
+                        </div>
+
+                        <div class="col-10">
+                          <div class="row">
+                            <div class="col-12">
+                              <p class="mt-2 mb-0 NameAndFamily-ChooseContact" >نام و نام خانوادگی</p>
+
+                              <hr>
+                            </div>
+
+                            <div class="col-12">
+                              <p  class="PhoneNumber-ChooseContact">تلفن </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div> <div class="row border border-secondary rounded bg-light mb-2" >
+                        <div class="col-2 pr-1">
+
+
+                          <img src="assets/img/user%20(1).svg"
+                            class="img-circle mt-3 ml-2 rounded-circle border border-warning " style="border-width:5px"
+                            alt="userimage" width="50px" height="50px">
+                        </div>
+
+                        <div class="col-10">
+                          <div class="row">
+                            <div class="col-12">
+                              <p class="mt-2 mb-0 NameAndFamily-ChooseContact" >نام و نام خانوادگی</p>
+
+                              <hr>
+                            </div>
+
+                            <div class="col-12">
+                              <p  class="PhoneNumber-ChooseContact">تلفن </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div> <div class="row border border-secondary rounded bg-light mb-2" >
+                        <div class="col-2 pr-1">
+
+
+                          <img src="assets/img/user%20(1).svg"
+                            class="img-circle mt-3 ml-2 rounded-circle border border-warning " style="border-width:5px"
+                            alt="userimage" width="50px" height="50px">
+                        </div>
+
+                        <div class="col-10">
+                          <div class="row">
+                            <div class="col-12">
+                              <p class="mt-2 mb-0 NameAndFamily-ChooseContact" >نام و نام خانوادگی</p>
+
+                              <hr>
+                            </div>
+
+                            <div class="col-12">
+                              <p  class="PhoneNumber-ChooseContact">تلفن </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div> <div class="row border border-secondary rounded bg-light mb-2" >
+                        <div class="col-2 pr-1">
+
+
+                          <img src="assets/img/user%20(1).svg"
+                            class="img-circle mt-3 ml-2 rounded-circle border border-warning " style="border-width:5px"
+                            alt="userimage" width="50px" height="50px">
+                        </div>
+
+                        <div class="col-10">
+                          <div class="row">
+                            <div class="col-12">
+                              <p class="mt-2 mb-0 NameAndFamily-ChooseContact" >نام و نام خانوادگی</p>
+
+                              <hr>
+                            </div>
+
+                            <div class="col-12">
+                              <p  class="PhoneNumber-ChooseContact">تلفن </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div> <div class="row border border-secondary rounded bg-light mb-2" >
+                        <div class="col-2 pr-1">
+
+
+                          <img src="assets/img/user%20(1).svg"
+                            class="img-circle mt-3 ml-2 rounded-circle border border-warning " style="border-width:5px"
+                            alt="userimage" width="50px" height="50px">
+                        </div>
+
+                        <div class="col-10">
+                          <div class="row">
+                            <div class="col-12">
+                              <p class="mt-2 mb-0 NameAndFamily-ChooseContact" >نام و نام خانوادگی</p>
+
+                              <hr>
+                            </div>
+
+                            <div class="col-12">
+                              <p  class="PhoneNumber-ChooseContact">تلفن </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div> <div class="row border border-secondary rounded bg-light mb-2" >
+                        <div class="col-2 pr-1">
+
+
+                          <img src="assets/img/user%20(1).svg"
+                            class="img-circle mt-3 ml-2 rounded-circle border border-warning " style="border-width:5px"
+                            alt="userimage" width="50px" height="50px">
+                        </div>
+
+                        <div class="col-10">
+                          <div class="row">
+                            <div class="col-12">
+                              <p class="mt-2 mb-0 NameAndFamily-ChooseContact" >نام و نام خانوادگی</p>
+
+                              <hr>
+                            </div>
+
+                            <div class="col-12">
+                              <p  class="PhoneNumber-ChooseContact">تلفن </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div> <div class="row border border-secondary rounded bg-light mb-2" >
+                        <div class="col-2 pr-1">
+
+
+                          <img src="assets/img/user%20(1).svg"
+                            class="img-circle mt-3 ml-2 rounded-circle border border-warning " style="border-width:5px"
+                            alt="userimage" width="50px" height="50px">
+                        </div>
+
+                        <div class="col-10">
+                          <div class="row">
+                            <div class="col-12">
+                              <p class="mt-2 mb-0 NameAndFamily-ChooseContact" >نام و نام خانوادگی</p>
+
+                              <hr>
+                            </div>
+
+                            <div class="col-12">
+                              <p  class="PhoneNumber-ChooseContact">تلفن </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div> <div class="row border border-secondary rounded bg-light mb-2" >
+                        <div class="col-2 pr-1">
+
+
+                          <img src="assets/img/user%20(1).svg"
+                            class="img-circle mt-3 ml-2 rounded-circle border border-warning " style="border-width:5px"
+                            alt="userimage" width="50px" height="50px">
+                        </div>
+
+                        <div class="col-10">
+                          <div class="row">
+                            <div class="col-12">
+                              <p class="mt-2 mb-0 NameAndFamily-ChooseContact" >نام و نام خانوادگی</p>
+
+                              <hr>
+                            </div>
+
+                            <div class="col-12">
+                              <p  class="PhoneNumber-ChooseContact">تلفن </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+        
+
+                    </div>
+
+                  </section>
+
                 </div>
+
+                <a class="modal-footer button p-3 d-flex justify-content-center ExitLink-ChooseFromContact" data-dismiss="modal">
+                  بیخیال
+
+
+                </a>
+              </div>
             </div>
-            <div class="col-12" style="margin-top: 15px;">
-                <div class="input-group">
-                    <div class="input-group-prepend"><span class="input-group-text" id="sapn-edit" style="background-color: rgb(15,71,128);"><i class="fa fa-tablet" style="font-size: 25px;color: rgb(255,220,36);"></i></span></div><input class="form-control" type="text" placeholder="تلفن همراه">
-                    <div
-                        class="input-group-append"></div>
+          </div>
+        </div>
+          <div class="col-12" style="margin-top: 39px;">
+            <div class="input-group">
+              <div class="input-group-prepend " ><span class="input-group-text rounded-0"style="background-color: #2469b3;" id="sapn-edit"><i class="fa fa-user Icon-InAddPeople"></i></span></div><input class="form-control"
+                type="text" placeholder="نام و نام خانوادگی">
+              <div class="input-group-append"></div>
             </div>
+          </div>
+          <div class="col-12" style="margin-top: 15px;">
+            <div class="input-group">
+              <div class="input-group-prepend"><span class="input-group-text rounded-0"style="background-color: #2469b3;" id="sapn-edit"><i class="fa fa-tablet Icon-InAddPeople"></i></span></div><input class="form-control"
+                type="text" placeholder="تلفن همراه">
+              <div class="input-group-append"></div>
+            </div>
+          </div>
+        <div class="col mt-3" >
+          <section id="kindsofcustomers" style="margin-top: 10px;">
+            <div>
+              <ul class="nav nav-tabs d-flex flex-grow-1 justify-content-between SetLevel-NavBar" id="customers-edit">
+                <li class="nav-item flex-fill" id="kindsofcustomers-tabs" style="margin: 5px;margin-right: -1px;">
+                  <a class="nav-link text-center flex-fill" role="tab" data-toggle="tab" id="kindsofcustomers-links"
+                    href="#tab-1" style="height: 62px;">
+                    <div class="rounded-circle"><i class="fas fa-user-secret"></i></div>
+                    <h6>غول</h6>
+                  </a>
+                </li>
+                <li class="nav-item flex-fill" id="kindsofcustomers-tabs" style="margin: 5px;"><a
+                    class="nav-link active text-center flex-fill" role="tab" data-toggle="tab"
+                    id="kindsofcustomers-links" href="#tab-2" style="height: 62px;"><i class="fa fa-diamond"></i>
+                    <h6>هلو</h6>
+                  </a></li>
+                <li class="nav-item flex-fill" id="kindsofcustomers-tabs" style="margin-left: 4px;"><a
+                    class="nav-link text-center flex-fill" role="tab" data-toggle="tab" id="kindsofcustomers-links"
+                    href="#tab-3" style="margin: 5px;margin-right: 5px;height: 62px;margin-left: -6px;"><i
+                      class="fa fa-male"></i>
+                    <h6>عادی</h6>
+                  </a></li>
+              </ul>
+              <div class="tab-content" id="pagesaboutcustomers" style="background-color: #ffffff;"></div>
+            </div>
+          </section>
         </div>
-        <div class="col" style="margin-top: 15px;">
-            <section id="kindsofcustomers" style="margin-top: 10px;">
-                <div>
-                    <ul class="nav nav-tabs d-flex flex-grow-1 justify-content-between" id="customers-edit" style="padding-right: 6px;padding-left: 6px;height: 75px;">
-                        <li class="nav-item flex-fill" id="kindsofcustomers-tabs" style="margin: 5px;margin-right: -1px;">
-                            <a class="nav-link text-center flex-fill" role="tab" data-toggle="tab" id="kindsofcustomers-links" href="#tab-1" style="height: 62px;">
-                                <div class="rounded-circle"><i class="fas fa-user-secret"></i></div>
-                                <h6>غول</h6>
-                            </a>
-                        </li>
-                        <li class="nav-item flex-fill" id="kindsofcustomers-tabs" style="margin: 5px;"><a class="nav-link active text-center flex-fill" role="tab" data-toggle="tab" id="kindsofcustomers-links" href="#tab-2" style="height: 62px;"><i class="fa fa-diamond"></i><h6>هلو</h6></a></li>
-                        <li class="nav-item flex-fill" id="kindsofcustomers-tabs"
-                            style="margin-left: 4px;"><a class="nav-link text-center flex-fill" role="tab" data-toggle="tab" id="kindsofcustomers-links" href="#tab-3" style="margin: 5px;margin-right: 5px;height: 62px;margin-left: -6px;"><i class="fa fa-male"></i><h6>عادی</h6></a></li>
-                    </ul>
-                    <div class="tab-content" id="pagesaboutcustomers" style="background-color: #ffffff;"></div>
-                </div>
-            </section>
-        </div>
-        </div>
-        </div>
-        <div class="col" id="saveandexit" style="margin-top: 31px;margin-bottom: 65px;"><a class="btn btn-primary" role="button" id="exit" style="margin-right: 7px;width: 116px;font-family: 'B Nazanin';font-size: 20px;background-color: rgb(249,83,73);" href="customers.html"><i class="fa fa-times" style="font-size: 17px;"></i>&nbsp; &nbsp; &nbsp; بیخیال</a>
-            <button
-                class="btn btn-primary" id="save" type="button" style="margin-right: 7px;width: 116px;font-family: 'B Nazanin';font-size: 20px;">ذخیره&nbsp; &nbsp; &nbsp;&nbsp;<i class="fas fa-user-check" style="font-size: 15px;"></i></button>
-        </div>
-    </section>
-    <section id="footer" class="fixed-bottom" style="height: 37px;background-color: #2469b3;margin-top: 0;width: 100%;">
-        <p style="margin-bottom: 0;font-family: 'B Nazanin';padding-top: 12px;">قدرت گرفته از قلب تپنده پیشتازان</p>
-    </section>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/circularProgressBar.js"></script>
-    <script src="assets/js/ExamSlider.js"></script>
+      </div>
+    </div>
+    <div class="col" id="saveandexit" style="margin-top: 31px;margin-bottom: 65px;"><a class="btn ButtonExit-InAddPeople"
+        role="button" id="exit" href="customers.html"><i class="fa fa-times" style="font-size: 17px;"></i>&nbsp; &nbsp; &nbsp; بیخیال</a>
+      <button class="btn btn-primary Buttonsave-InAddPeople " id="save" type="button">ذخیره&nbsp; &nbsp;
+        &nbsp;&nbsp;<i class="fas fa-user-check" style="font-size: 15px;"></i></button>
+    </div>
+  </section>
+  <section id="footer" class="fixed-bottom Fotter-Pishtazan">
+    <p class="Fotter-Paragraph">قدرت گرفته از قلب تپنده پیشتازان</p>
+  </section>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/circularProgressBar.js"></script>
+  <script src="assets/js/ExamSlider.js"></script>
 </body>
 
 </html>
