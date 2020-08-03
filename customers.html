@@ -18,13 +18,13 @@
 </head>
 
 <body>
-  <section id="collaps-section">
+  <!--دکمه بالای صفحه که در همه صفحه ها وجود دارد-->
+  <section id="collaps-section" class="fixed-top" style="background-color: #ffffff;">
     <div class="container-fluid">
       <div class="row" id="collaps-icon">
-        <div class="col-3" id="collaps-col">
-          <div id="collapsicon-div"><button class="btn btn-primary active rounded-circle" id="collapsicon-button"
-              type="button" style="background-color: rgb(245,176,71);margin-top: 4px;margin-right: 4px;border: none;"><i
-                class="fa fa-align-justify"></i></button></div>
+        <div class="col-3" id="collapsicon-col">
+          <div id="collapsicon-div"><button class="btn Collapse-Button active rounded-circle" id="collapsicon-button"
+              type="button"><i class="fa fa-align-justify text-light"></i></button></div>
         </div>
         <div class="col-9" id="collapsicon-heading">
           <h1 class="d-flex justify-content-start align-items-center" id="collaps-heading"
@@ -34,7 +34,8 @@
       </div>
     </div>
   </section>
-  <section id="kindsofcustomers" style="margin-top: 10px;">
+  <!--------------------------------------------------->
+  <section class="container" id="kindsofcustomers" style="margin-top: 55px;">
     <div id="customers-tab-heading">
       <ul class="nav nav-tabs d-flex flex-grow-1 justify-content-between" id="customers-tabitems"
         style="padding-right: 6px;padding-left: 6px;">
@@ -63,9 +64,9 @@
             <div class="container">
               <div class="row" id="posiblecustomers-row">
                 <div class="col-4 col-md-3" id="customer-img" style="padding-right: 0px;">
-                  <div class="d-flex justify-content-center align-items-center" id="image-div"
-                    style="background-color: #bfbfbf;height: 110px;"><i class="fa fa-user-secret" id="icononimage"
-                      style="margin-top: -71px;font-size: 34px;margin-left: 14px;"></i><img
+                  <div class="d-flex justify-content-center align-items-center Set-Image-CustomersPage-Div" id="image-div">
+                    <i class="fa fa-user-secret" id="icononimage"
+                      style="margin-top: -71px;font-size: 30px;margin-left: 14px;"></i><img
                       class="d-flex rounded-circle" id="img-customers" style="margin-right: -37px;"
                       src="assets/img/user%20(1).svg"></div>
                 </div>
@@ -80,8 +81,8 @@
                         <div class="col-4">
                           <div>
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn "
-                              style="width:auto;font-size:18px;font-family:B Nazanin; color:red" data-toggle="modal"
+                            <button type="button" class="btn Trashbin-Icon "
+                             data-toggle="modal"
                               data-target="#deleteperson"><i class="fa fa-trash" style="font-size:28px"></i>
 
                             </button>
@@ -98,13 +99,13 @@
                                   <div class="modal-footer d-inline p-0" style="text-align:center">
                                     <div class="row">
                                       <div class="col-6">
-                                        <button type="button" data-dismiss="modal" class="btn btn-secondary "
-                                          style="font-size:20px;font-family:B Nazanin; font-weight:500;background-color:rgb(249,83,73);width:100%"><i
+                                        <button type="button" data-dismiss="modal"
+                                          class="btn btn-secondary ButtonExit "><i
                                             class="fa fa-times"></i>&nbsp;&nbsp;&nbsp;&nbsp;بیخیال</button>
                                       </div>
                                       <div class="col-6">
-                                        <button type="button" class="btn btn-primary"
-                                          style="font-size:20px;font-family:B Nazanin; font-weight:500;width:100%">بلی&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                        <button type="button"
+                                          class="btn btn-primary Buttonyes">بلی&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
                                             class="fas fa-check"></i></button>
                                       </div>
                                     </div>
@@ -118,10 +119,8 @@
                     </div>
                     <div class="col-12">
                       <!-- Button trigger modal -->
-                      <button type="button" class="btn  mt-2"
-                        style="width:150px;font-size:18px;font-family:B Nazanin; background-color:rgb(36,105,179);font-weight:500; color:white"
-                        data-toggle="modal" data-target="#chooseoperation"><i class="fa fa-gear"
-                          style="font-size:18px"></i>
+                      <button type="button" class="btn  mt-2 ChooseOperation-InCustomerspanel" data-toggle="modal"
+                        data-target="#chooseoperation"><i class="fa fa-gear" style="font-size:18px"></i>
                         &nbsp;&nbsp;انتخاب عملیات
                       </button>
 
@@ -132,23 +131,19 @@
                         <div class="modal-dialog modal-dialog-centered" role="document">
                           <div class="modal-content" style="text-align:right">
                             <div class="modal-body">
-
                               <a href="edit.html" class="tooltip-test " style="text-decoration:none" title="Tooltip"><i
                                   class="fa fa-edit"></i>&nbsp;&nbsp;تکمیل اطلاعات</a>
                               <hr>
                               <a href="#" id="setmentionlink" class="tooltip-test" style="text-decoration:none"
                                 title="Tooltip" data-toggle="modal" data-target="#setmention"><i
                                   class="fa fa-phone"></i>&nbsp;&nbsp;ثبت یادآوری تماس</a>
-
                               <div class="modal fade" id="setmention" tabindex="-1" role="dialog"
                                 aria-labelledby="chooseoperationTitle" aria-hidden="true">
                                 <div class="modal-dialog " role="document">
                                   <div class="modal-content">
-
-                                    <button class="btn btn-light mt-4  mx-1 "
-                                      style=" display:block; font-size:25px;font-family:B Nazanin; font-weight:700 "
-                                      type="button" data-toggle="collapse" data-target="#choosedate"
-                                      aria-expanded="false" aria-controls="choosedate">
+                                    <button class="btn btn-light mt-4  mx-1 ChooseDateAndTime-Collaps " type="button"
+                                      data-toggle="collapse" data-target="#choosedate" aria-expanded="false"
+                                      aria-controls="choosedate">
                                       انتخاب تاریخ
 
                                     </button>
@@ -161,10 +156,9 @@
                                       </div>
                                     </div>
                                     <hr>
-                                    <button class="btn btn-light mb-2 mx-1 "
-                                      style=" display:block; font-size:25px;font-family:B Nazanin; font-weight:700 "
-                                      type="button" data-toggle="collapse" data-target="#choosetime"
-                                      aria-expanded="false" aria-controls="choosetime">
+                                    <button class="btn btn-light mb-2 mx-1 ChooseDateAndTime-Collaps" type="button"
+                                      data-toggle="collapse" data-target="#choosetime" aria-expanded="false"
+                                      aria-controls="choosetime">
                                       انتخاب ساعت
 
                                     </button>
@@ -179,17 +173,16 @@
 
                                     <hr>
 
-                                    <div class="modal-footer d-inline p-0" style="text-align:center">
+                                    <div class="modal-footer d-inline p-0 text-center">
                                       <div class="row">
                                         <div class="col-6">
-                                          <button type="button" class="btn btn-secondary "
-                                            style="font-size:20px;font-family:B Nazanin; font-weight:500;background-color:rgb(249,83,73);width:100%"
+                                          <button type="button" class="btn btn-secondary ButtonExit"
                                             onclick="$('#setmention').modal('hide')"><i
                                               class="fa fa-times"></i>&nbsp;&nbsp;&nbsp;&nbsp;بیخیال</button>
                                         </div>
                                         <div class="col-6">
-                                          <button type="button" class="btn btn-primary"
-                                            style="font-size:20px;font-family:B Nazanin; font-weight:500;width:100%">ذخیره&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                          <button type="button"
+                                            class="btn btn-primary Buttonsave">ذخیره&nbsp;&nbsp;&nbsp;&nbsp;<i
                                               class="fas fa-user-check"></i></button>
                                         </div>
                                       </div>
@@ -200,23 +193,22 @@
                               <hr>
 
                               <a href="#" id="setmentionlink" class="tooltip-test" style="text-decoration:none"
-                                title="Tooltip" data-toggle="modal" data-target="#setmention"><i
+                                title="Tooltip" data-toggle="modal" data-target="#setmention-meeting"><i
                                   class="fa fa-users"></i>&nbsp;&nbsp;ثبت یادآوری جلسه</a>
 
-                              <div class="modal fade" id="setmention" tabindex="-1" role="dialog"
+                              <div class="modal fade" id="setmention-meeting" tabindex="-1" role="dialog"
                                 aria-labelledby="chooseoperationTitle" aria-hidden="true">
                                 <div class="modal-dialog " role="document">
                                   <div class="modal-content">
 
-                                    <button class="btn btn-light mt-4  mx-1 "
-                                      style=" display:block; font-size:25px;font-family:B Nazanin; font-weight:700 "
-                                      type="button" data-toggle="collapse" data-target="#choosedate"
-                                      aria-expanded="false" aria-controls="choosedate">
+                                    <button class="btn btn-light mt-4  mx-1 ChooseDateAndTime-Collaps" type="button"
+                                      data-toggle="collapse" data-target="#choosedate-meeting" aria-expanded="false"
+                                      aria-controls="choosedate-meeting">
                                       انتخاب تاریخ
 
                                     </button>
 
-                                    <div class="collapse" id="choosedate">
+                                    <div class="collapse" id="choosedate-meeting">
                                       <div class="card card-body">
                                         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
                                         richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes
@@ -224,15 +216,14 @@
                                       </div>
                                     </div>
                                     <hr>
-                                    <button class="btn btn-light mb-2 mx-1 "
-                                      style=" display:block; font-size:25px;font-family:B Nazanin; font-weight:700 "
-                                      type="button" data-toggle="collapse" data-target="#choosetime"
-                                      aria-expanded="false" aria-controls="choosetime">
+                                    <button class="btn btn-light mb-2 mx-1 ChooseDateAndTime-Collaps" type="button"
+                                      data-toggle="collapse" data-target="#choosetime-meeting" aria-expanded="false"
+                                      aria-controls="choosetime-meeting">
                                       انتخاب ساعت
 
                                     </button>
 
-                                    <div class="collapse" id="choosetime">
+                                    <div class="collapse" id="choosetime-meeting">
                                       <div class="card card-body">
                                         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
                                         richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes
@@ -242,17 +233,16 @@
 
                                     <hr>
 
-                                    <div class="modal-footer d-inline p-0" style="text-align:center">
+                                    <div class="modal-footer d-inline p-0 text-center">
                                       <div class="row">
                                         <div class="col-6">
-                                          <button type="button" class="btn btn-secondary "
-                                            style="font-size:20px;font-family:B Nazanin; font-weight:500;background-color:rgb(249,83,73);width:100%"
-                                            onclick="$('#setmention').modal('hide')"><i
+                                          <button type="button" class="btn btn-secondary ButtonExit"
+                                            onclick="$('#setmention-meeting').modal('hide')"><i
                                               class="fa fa-times"></i>&nbsp;&nbsp;&nbsp;&nbsp;بیخیال</button>
                                         </div>
                                         <div class="col-6">
-                                          <button type="button" class="btn btn-primary"
-                                            style="font-size:20px;font-family:B Nazanin; font-weight:500;width:100%">ذخیره&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                          <button type="button"
+                                            class="btn btn-primary Buttonsave">ذخیره&nbsp;&nbsp;&nbsp;&nbsp;<i
                                               class="fas fa-user-check"></i></button>
                                         </div>
                                       </div>
@@ -270,18 +260,47 @@
                               <a href="#" class="tooltip-test" style="text-decoration:none" title="Tooltip"><i
                                   class="fa fa-search"></i>&nbsp;&nbsp;لیست بیمه نامه ها</a>
                               <hr>
-                              <a href="#" class="tooltip-test " title="Tooltip"
-                                style="color:red;text-decoration:none"><i class="fa fa-user-times"></i>&nbsp;&nbsp;حذف
-                                کردن از لیست</a>
+                           
+                              <a href="#" class="tooltip-test " title="Tooltip" style="color:red;text-decoration:none"
+                                title="Tooltip" data-toggle="modal" data-target="#delete-link"><i
+                                  class="fa fa-user-times"></i>&nbsp;&nbsp;حذف
+                                کردن از لیست
+                              </a>
+                            
+                              <div class="modal fade" id="delete-link" tabindex="-1" role="dialog"
+                                aria-labelledby="chooseoperationTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered " role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header" style="justify-content: center">
+                                      <h5 class="modal-title" id="deletepersonLabel">آیا برای حذف مطممن هستید؟</h5>
+                                    </div>
+                                    <div class="modal-footer d-inline p-0 text-center">
+                                      <div class="row">
+                                        <div class="col-6">
+                                          <button type="button" class="btn btn-secondary ButtonExit"
+                                            onclick="$('#delete-link').modal('hide')"><i
+                                              class="fa fa-times"></i>&nbsp;&nbsp;&nbsp;&nbsp;بیخیال</button>
+                                        </div>
+                                        <div class="col-6">
+                                          <button type="button"
+                                            class="btn btn-primary Buttonyes">بلی&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                              class="fas fa-check"></i></button>
+                                        </div>
+                                      </div>
+                                    </div>
 
+
+                                   
+                                  </div>
+                                </div>
+                              </div>
                               <hr>
+
                             </div>
-                            <a class="modal-footer button p-3 d-flex justify-content-center " data-dismiss="modal"
-                              style="background-color:yellow;text-align:center;font-size:20px;font-family:B Nazanin; font-weight:700  ">
-                              بیخیال
-
-
-                            </a>
+                         
+                            <a class="modal-footer button p-3 d-flex justify-content-center Bikhial-Link" data-dismiss="modal">
+                            بیخیال
+                          </a>
                           </div>
                         </div>
                       </div>
@@ -289,7 +308,6 @@
                   </div>
                 </div>
               </div>
-            </div>
           </section>
         </div>
         <div class="tab-pane" role="tabpanel" id="tab-3">
@@ -298,10 +316,7 @@
       </div>
     </div>
   </section>
-  <section class="d-sm-flex justify-content-sm-center align-items-sm-center fixed-bottom" id="footer"
-    style="height: 37px;background-color: #2469b3;margin-top: 0;width: 100%;">
-    <p style="margin-bottom: 0;font-family: 'B Nazanin';padding-top: 12px;">قدرت گرفته از قلب تپنده پیشتازان</p>
-  </section> <!-- Modal -->
+  <!-- Modal -->
   <div class="modal fade bg-info" id="modalOneModal" tabindex="-1" role="dialog" aria-labelledby="modalOneLabel"
     aria-hidden="true">
 
@@ -331,6 +346,9 @@
       </div>
     </div>
   </div>
+  <section id="footer" class="fixed-bottom Fotter-Pishtazan">
+    <p class="Fotter-Paragraph">قدرت گرفته از قلب تپنده پیشتازان</p>
+  </section>
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/js/circularProgressBar.js"></script>
