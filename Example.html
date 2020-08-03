@@ -18,7 +18,20 @@
 </head>
 
 <body>
-    <div class="container text-center"><!-- Progress bar 4 -->
+     <!--دکمه بالای صفحه که در همه صفحه ها وجود دارد-->
+     <section id="collaps-section" class="fixed-top" style="background-color: #ffffff;">
+        <div class="container-fluid">
+            <div class="row" id="collaps-icon">
+                <div class="col" id="collapsicon-col">
+                    <div id="collapsicon-div"><button class="btn Collapse-Button active rounded-circle"
+                            id="collapsicon-button" type="button"><i
+                                class="fa fa-align-justify text-light"></i></button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------------------------------------------->
+    <div class="container text-center mt-5"><!-- Progress bar 4 -->
         <div class="progress mx-auto"  startMinute-value="30">
           <span class="progress-left">
                         <span class="progress-bar border-warning"></span>
@@ -39,7 +52,7 @@
 
 
 <div class="ExamSlider">
-<div class="my-4 rounded text-right p-3 " id="question" style="background-color: rgb(113, 238, 247);display: none;">
+<div class="my-4 rounded text-right p-3 Question-Style"  id="question">
     <strong class="">سوال 1</strong>
     <div class="answer mt-3">
         <input type="radio" id="answer1" name="answer" value="answer1">
@@ -53,7 +66,7 @@
     </div>
     
 </div>
-<div class="my-4 rounded text-right p-3 " id="question" style="background-color: rgb(113, 238, 247);display: none;">
+<div class="my-4 rounded text-right p-3 Question-Style " id="question" >
     <strong class="">سوال 2</strong>
     <div class="answer mt-3">
         <input type="radio" id="answer1" name="answer" value="answer1">
@@ -67,7 +80,7 @@
     </div>
     
 </div>
-<div class="my-4 rounded text-right p-3 " id="question" style="background-color: rgb(113, 238, 247);display: none;">
+<div class="my-4 rounded text-right p-3 Question-Style " id="question">
     <strong class="">سوال 3</strong>
     <div class="answer mt-3">
         <input type="radio" id="answer1" name="answer" value="answer1">
@@ -81,7 +94,7 @@
     </div>
     
 </div>
-<div class="my-4 rounded text-right p-3 " id="question" style="background-color: rgb(113, 238, 247);display: none;">
+<div class="my-4 rounded text-right p-3 Question-Style" id="question">
     <strong class="">سوال 4</strong>
     <div class="answer mt-3">
         <input type="radio" id="answer1" name="answer" value="answer1">
@@ -101,6 +114,9 @@
 <div class="col-5 w-100 btn btn-default mx-auto  text-light" style="background-color: rgb(36,105,179) !important;" id="exam_next">بعدی</div>
 </div>
 </div>
+<section id="footer" class="fixed-bottom Fotter-Pishtazan">
+    <p class="Fotter-Paragraph">قدرت گرفته از قلب تپنده پیشتازان</p>
+</section>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/circularProgressBar.js"></script>
