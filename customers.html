@@ -58,6 +58,101 @@
       </ul>
       <div class="tab-content" id="pagesaboutcustomers" style="background-color: #ffffff;">
         <div class="tab-pane" role="tabpanel" id="tab-1">
+          <section id="posiblecustomers1" style="margin-top: 25px;height: 148px;">
+            <div class="container">
+              <div class="row" id="posiblecustomers-row">
+                <div class="col-4 col-md-3" id="customer-img" style="padding-right: 0px;">
+                  <div class="d-flex justify-content-center align-items-center Set-Image-CustomersPage-Div" id="image-div">
+                    <i class="fa fa-user-secret" id="icononimage"
+                      style="margin-top: -71px;font-size: 30px;margin-left: 14px;"></i><img
+                      class="d-flex rounded-circle" id="img-customers" style="margin-right: -37px;"
+                      src="assets/img/user%20(1).svg"></div>
+                </div>
+                <div class="col" id="customers-processes">
+                  <div class="row">
+                    <div class="col-12" id="deleteandname-col" style="margin-top: 7px;">
+                      <div class="row">
+                        <div class="col" style="margin-top: 8px;">
+                          <p class="text-right" style="font-size: 21px;font-weight: 300;margin-bottom: 6px;">&nbsp;
+                            &nbsp;<i class="fa fa-user" style="color: rgb(36,105,179);"></i> name&nbsp;</p>
+                        </div>
+                        <div class="col-4">
+                          <div>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn Trashbin-Icon "
+                             data-toggle="modal"
+                              data-target="#deleteperson"><i class="fa fa-trash" style="font-size:28px"></i>
+
+                            </button>
+
+                            <!-- Modal -->
+
+                            <div class="modal fade" id="deleteperson" tabindex="-1" role="dialog"
+                              aria-labelledby="deletepersonLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header" style="justify-content: center">
+                                    <h5 class="modal-title" id="deletepersonLabel">آیا برای حذف مطممن هستید؟</h5>
+                                  </div>
+                                  <div class="modal-footer d-inline p-0" style="text-align:center">
+                                    <div class="row">
+                                      <div class="col-6">
+                                        <button type="button" data-dismiss="modal"
+                                          class="btn btn-secondary ButtonExit-Delete "><i
+                                            class="fa fa-times"></i>&nbsp;&nbsp;بیخیال</button>
+                                      </div>
+                                      <div class="col-6">
+                                        <button type="button"
+                                          class="btn btn-primary Buttonyes">بلی&nbsp;&nbsp;<i
+                                            class="fas fa-check"></i></button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn  mt-2 ChooseOperation-InCustomerspanel" data-toggle="modal"
+                        data-target="#sendtoposibly"><i class="fa fa-gear" style="font-size:18px"></i>
+                        &nbsp;&nbsp;انتقال به احتمالی
+                      </button>
+
+                      <!-- Modal -->
+
+                      <div class="modal fade" id="sendtoposibly" tabindex="-1" role="dialog"
+                      aria-labelledby="sendtoposiblyLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header" style="justify-content: center">
+                            <h5 class="modal-title" id="sendtoposiblyLabel">آیا برای انتقال مطممن هستید؟</h5>
+                          </div>
+                          <div class="modal-footer d-inline p-0" style="text-align:center">
+                            <div class="row">
+                              <div class="col-6">
+                                <button type="button" data-dismiss="modal"
+                                  class="btn btn-secondary ButtonExit-Delete "><i
+                                    class="fa fa-times"></i>&nbsp;&nbsp;بیخیال</button>
+                              </div>
+                              <div class="col-6">
+                                <button type="button"
+                                  class="btn btn-primary Buttonyes">بلی&nbsp;&nbsp;<i
+                                    class="fas fa-check"></i></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </section>
           <section class="d-flex justify-content-center align-items-center fixed-bottom" id="addpeople"
             style="margin-bottom: 51px;font-family: 'B Nazanin';"><a
               class="btn btn-primary d-flex justify-content-center align-items-center" role="button"
