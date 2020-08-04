@@ -703,3 +703,14 @@ body {
   font-family:B Nazanin;
    color:red
 }
+#paragraph-enterphonenumber{
+  margin-top: 22px;
+  font-size: 11px;
+  font-weight: bold;
+}
+#getcodebutton-enterphonenumber{
+  margin-top: 19px;
+  width: 60%;
+  height: 51px;
+  background-color: rgb(15,71,128);
+}
