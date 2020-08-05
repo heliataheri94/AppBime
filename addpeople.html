@@ -37,10 +37,10 @@
     </div>
   </section>
   <!--------------------------------------------------->
-  <section id="edit" style="margin-top: 60px;">
+  <section class="mt-5" id="edit">
     <div class="container px-4">
       <div class="row">
-        <div class="col" id="choosefromcontact">
+        <div class="col" id="choosefromcontact"><!--محل انتخاب افراد از لیست مخاطبین تلفن همراه-->
           <!-- Button trigger modal -->
           <button type="button" class="btn  mt-2 ChooseFromContact-Button" data-toggle="modal" data-target="#choosecontact">
             <i class="fa fa-address-book" style="font-size:20px;color:rgb(255,220,36)"></i>
@@ -52,7 +52,7 @@
           <div class="modal fade" id="choosecontact" tabindex="-1" role="dialog" aria-labelledby="choosecontactTitle"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content" style="text-align:right">
+              <div class="modal-content text-right" >
                 <div class="modal-body" style="background-color:#e4e4e4">
                   <div class="input-group fixed mb-3">
                     <div class="input-group-prepend" style="background-color:rgb(36,105,179)">
@@ -413,20 +413,24 @@
             </div>
           </div>
         </div>
+      <!--اینپوت های مربوط به وارد کردن نام و تلفن-->
           <div class="col-12" style="margin-top: 39px;">
             <div class="input-group">
-              <div class="input-group-prepend " ><span class="input-group-text rounded-0"style="background-color: #2469b3;" id="sapn-edit"><i class="fa fa-user Icon-InAddPeople"></i></span></div><input class="form-control"
+              <div class="input-group-prepend " ><span class="input-group-text rounded-0" id="sapn-edit"><i class="fa fa-user Icon-InAddPeople">     
+                </i></span></div><input class="form-control"
                 type="text" placeholder="نام و نام خانوادگی">
               <div class="input-group-append"></div>
             </div>
           </div>
           <div class="col-12" style="margin-top: 15px;">
             <div class="input-group">
-              <div class="input-group-prepend"><span class="input-group-text rounded-0"style="background-color: #2469b3;" id="sapn-edit"><i class="fa fa-tablet Icon-InAddPeople"></i></span></div><input class="form-control"
+              <div class="input-group-prepend"><span class="input-group-text rounded-0" id="sapn-edit"><i class="fa fa-tablet Icon-InAddPeople">
+                </i></span></div><input class="form-control"
                 type="text" placeholder="تلفن همراه">
               <div class="input-group-append"></div>
             </div>
           </div>
+          <!--انواع مشتری غول/هلو/عادی-->
         <div class="col mt-3" >
           <section id="kindsofcustomers" style="margin-top: 10px;">
             <div>
@@ -456,15 +460,19 @@
         </div>
       </div>
     </div>
-    <div class="col" id="saveandexit" style="margin-top: 31px;margin-bottom: 65px;"><a class="btn ButtonExit"
-        role="button" id="exit" href="customers.html"><i class="fa fa-times" style="font-size: 17px;"></i>&nbsp; &nbsp; &nbsp; بیخیال</a>
-      <button class="btn btn-primary Buttonsave " id="save" type="button">ذخیره&nbsp; &nbsp;
+    <!--دکمه های خروج و ذخیره کردن-->
+    <div class="col" id="saveandexit"><a class="btn ButtonExit exit"
+        role="button" href="customers.html"><i class="fa fa-times" style="font-size: 17px;"></i>&nbsp; &nbsp; &nbsp; بیخیال</a>
+      <button class="btn btn-primary Buttonsave save" type="button">ذخیره&nbsp; &nbsp;
         &nbsp;&nbsp;<i class="fas fa-user-check" style="font-size: 15px;"></i></button>
     </div>
   </section>
+   <!--------------------------------------------------->
+  <!--فوتر که در همه صفحات وجود دارد-->
   <section id="footer" class="fixed-bottom Fotter-Pishtazan">
     <p class="Fotter-Paragraph">قدرت گرفته از قلب تپنده پیشتازان</p>
   </section>
+   <!--------------------------------------------------->
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/js/circularProgressBar.js"></script>
