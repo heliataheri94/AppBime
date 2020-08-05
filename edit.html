@@ -38,6 +38,7 @@
         </div>
     </section>
     <!--------------------------------------------------->
+    <!--قسمت مربوط به وارد کردن اطلاعات-->
     <section id="edit" style="margin-top: 55px;">
         <div class="container" style="padding-right: 31px;padding-left: 31px;">
             <div class="row">
@@ -51,7 +52,7 @@
                         <div class="input-group-prepend"><span class="input-group-text" id="sapn-edit"
                                 style="background-color: rgb(15,71,128);">
                                 <i class="fa fa-user" style="font-size: 25px;color: rgb(255,220,36);"></i>
-                            </span></div><input class="form-control" type="text">
+                            </span></div><input class="form-control" type="text" placeholder="نام و نام خانوادگی">
                         <div class="input-group-append"></div>
                     </div>
                 </div>
@@ -60,7 +61,7 @@
                         <div class="input-group-prepend"><span class="input-group-text" id="sapn-edit"
                                 style="background-color: rgb(15,71,128);">
                                 <i class="fa fa-tablet" style="font-size: 25px;color: rgb(255,220,36);"></i>
-                            </span></div><input class="form-control" type="text">
+                            </span></div><input class="form-control" type="text" placeholder="تلفن همراه">
                         <div class="input-group-append"></div>
                     </div>
                 </div>
@@ -69,7 +70,7 @@
                         <div class="input-group-prepend"><span class="input-group-text" id="sapn-edit"
                                 style="background-color: rgb(15,71,128);">
                                 <i class="fa fa-phone" style="font-size: 25px;color: rgb(255,220,36);"></i>
-                            </span></div><input class="form-control" type="text">
+                            </span></div><input class="form-control" type="text" placeholder="تلفن ثابت">
                         <div class="input-group-append"></div>
                     </div>
                 </div>
@@ -78,7 +79,7 @@
                         <div class="input-group-prepend"><span class="input-group-text" id="sapn-edit"
                                 style="background-color: rgb(15,71,128);">
                                 <i class="fa fa-drivers-license-o" style="font-size: 17px;color: rgb(255,220,36);"></i>
-                            </span></div><input class="form-control" type="text">
+                            </span></div><input class="form-control" type="text" placeholder="کد ملی">
                         <div class="input-group-append"></div>
                     </div>
                 </div>
@@ -87,7 +88,7 @@
                         <div class="input-group-prepend"><span class="input-group-text" id="sapn-edit"
                                 style="background-color: rgb(15,71,128);">
                                 <i class="fa fa-birthday-cake" style="font-size: 17px;color: rgb(255,220,36);"></i>
-                            </span></div><input class="form-control" type="text" style="height: 48px;">
+                            </span></div><input class="form-control" type="text" placeholder="تاریخ تولد" style="height: 48px;">
                         <div class="input-group-append"></div>
                     </div>
                 </div>
@@ -96,10 +97,11 @@
                         <div class="input-group-prepend"><span class="input-group-text" id="sapn-edit"
                                 style="background-color: rgb(15,71,128);">
                                 <i class="fa fa-map-marker" style="font-size: 25px;color: rgb(255,220,36);"></i>
-                            </span></div><input class="form-control" type="text" style="height: 126px;">
+                            </span></div><input class="form-control" type="text" placeholder="آدرس" style="height: 126px;">
                         <div class="input-group-append"></div>
                     </div>
                 </div>
+                 <!--انواع مشتری غول/هلو/عادی-->
                 <div class="col mt-3">
                     <section id="kindsofcustomers" style="margin-top: 10px;">
                         <div>
@@ -131,19 +133,21 @@
                         </div>
                     </section>
                 </div>
+                 <!--انتخاب مکان دقیق از روی نقشه-->
                 <div class="col-12" style="margin-top: 15px;"><button class="btn btn-primary btn-block" type="button"
                         style="background-color: rgb(21,239,226);color: rgb(18,19,28);font-family: 'B Nazanin';font-size: 20px;"><img
                             src="assets/img/map.svg" style="width: 40px;margin-right: -41px;">&nbsp; &nbsp; &nbsp;
                         &nbsp;انتخاب مکان روی نقشه</button></div>
             </div>
         </div>
-        
-        <div class="col" id="saveandexit" style="margin-top: 31px;margin-bottom: 65px;"><a class="btn ButtonExit"
-            role="button" id="exit" href="customers.html"><i class="fa fa-times" style="font-size: 17px;"></i>&nbsp; &nbsp; &nbsp; بیخیال</a>
-          <button class="btn btn-primary Buttonsave " id="save" type="button">ذخیره&nbsp; &nbsp;
+         <!--دکمه های خروج و. ذخیره کردن-->
+        <div class="col" id="saveandexit" style="margin-top: 31px;margin-bottom: 65px;"><a class="btn ButtonExit exit"
+            role="button"  href="customers.html"><i class="fa fa-times" style="font-size: 17px;"></i>&nbsp; &nbsp; &nbsp; بیخیال</a>
+          <button class="btn btn-primary Buttonsave save"  type="button">ذخیره&nbsp; &nbsp;
             &nbsp;&nbsp;<i class="fas fa-user-check" style="font-size: 15px;"></i></button>
         </div>
     </section>
+     <!--فوتر که در همه صفحات وجود دارد-->
     <section id="footer" class="fixed-bottom Fotter-Pishtazan">
         <p class="Fotter-Paragraph">قدرت گرفته از قلب تپنده پیشتازان</p>
     </section>
