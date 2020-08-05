@@ -42,6 +42,7 @@
     </div>
   </section>
   <!--------------------------------------------------->
+  <!--نوآیتم مربوط به انواع مشتری که با توجه به دسته بندی هرکدام دارای یکسری آپشن ها هستند-->
   <section class="container" id="kindsofcustomers" style="margin-top: 55px;">
     <div id="customers-tab-heading">
       <ul class="nav nav-tabs d-flex flex-grow-1 justify-content-between" id="customers-tabitems"
@@ -56,6 +57,7 @@
             class="nav-link text-center flex-fill" role="tab" data-toggle="tab" id="kindsofcustomers-links"
             href="#tab-3" style="color: rgb(255,214,0);">قطعی</a></li>
       </ul>
+      <!-- آیتم مربوط به مشتری های بالقوه که میتوان از طریق دکمه به لیست اضافه کرد و از طریف دکمه دیگر فرد مورد نظر را به لیست مشتری های احتمالی انتقال داد -->
       <div class="tab-content" id="pagesaboutcustomers" style="background-color: #ffffff;">
         <div class="tab-pane" role="tabpanel" id="tab-1">
           <section id="posiblecustomers1" style="margin-top: 25px;height: 148px;">
@@ -78,32 +80,32 @@
                         </div>
                         <div class="col-4">
                           <div>
-                            <!-- Button trigger modal -->
+                            <!-- Button trigger modal delete -->
                             <button type="button" class="btn Trashbin-Icon "
                              data-toggle="modal"
-                              data-target="#deleteperson"><i class="fa fa-trash" style="font-size:28px"></i>
+                              data-target="#deleteperson-potential"><i class="fa fa-trash" style="font-size:28px"></i>
 
                             </button>
 
                             <!-- Modal -->
 
-                            <div class="modal fade" id="deleteperson" tabindex="-1" role="dialog"
-                              aria-labelledby="deletepersonLabel" aria-hidden="true">
+                            <div class="modal fade" id="deleteperson-potential" tabindex="-1" role="dialog"
+                              aria-labelledby="deleteperson-potentialLabel" aria-hidden="true">
                               <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
                                   <div class="modal-header" style="justify-content: center">
-                                    <h5 class="modal-title" id="deletepersonLabel">آیا برای حذف مطممن هستید؟</h5>
+                                    <h5 class="modal-title" id="deleteperson-potentialLabel">آیا برای حذف مطممن هستید؟</h5>
                                   </div>
                                   <div class="modal-footer d-inline p-0" style="text-align:center">
                                     <div class="row">
                                       <div class="col-6">
-                                        <button type="button" data-dismiss="modal"
-                                          class="btn btn-secondary ButtonExit-Delete "><i
+                                        <button type="button" data-dismiss="modal" 
+                                          class="btn btn-secondary ButtonExit-Delete exit"><i
                                             class="fa fa-times"></i>&nbsp;&nbsp;بیخیال</button>
                                       </div>
                                       <div class="col-6">
                                         <button type="button"
-                                          class="btn btn-primary Buttonyes">بلی&nbsp;&nbsp;<i
+                                          class="btn btn-primary Buttonyes save">بلی&nbsp;&nbsp;<i
                                             class="fas fa-check"></i></button>
                                       </div>
                                     </div>
@@ -116,9 +118,9 @@
                       </div>
                     </div>
                     <div class="col-12">
-                      <!-- Button trigger modal -->
-                      <button type="button" class="btn  mt-2 ChooseOperation-InCustomerspanel" data-toggle="modal"
-                        data-target="#sendtoposibly"><i class="fa fa-gear" style="font-size:18px"></i>
+                      <!-- Button trigger modal send to properly -->
+                      <button style="width: auto;" type="button" class="btn  mt-2 ChooseOperation-InCustomerspanel" data-toggle="modal"
+                        data-target="#sendtoposibly"><i class=" material-icons " style="font-size:18px">transfer_within_a_station</i>
                         &nbsp;&nbsp;انتقال به احتمالی
                       </button>
 
@@ -135,12 +137,12 @@
                             <div class="row">
                               <div class="col-6">
                                 <button type="button" data-dismiss="modal"
-                                  class="btn btn-secondary ButtonExit-Delete "><i
+                                  class="btn btn-secondary ButtonExit-Delete exit"><i
                                     class="fa fa-times"></i>&nbsp;&nbsp;بیخیال</button>
                               </div>
                               <div class="col-6">
                                 <button type="button"
-                                  class="btn btn-primary Buttonyes">بلی&nbsp;&nbsp;<i
+                                  class="btn btn-primary Buttonyes save">بلی&nbsp;&nbsp;<i
                                     class="fas fa-check"></i></button>
                               </div>
                             </div>
@@ -153,6 +155,7 @@
                 </div>
               </div>
           </section>
+          <!-- آیتم مریوط به مشتری های احتمالی که در این قسمت میتوانند ویژگی هایی را داشته باشند -->
           <section class="d-flex justify-content-center align-items-center fixed-bottom" id="addpeople"
             style="margin-bottom: 51px;font-family: 'B Nazanin';"><a
               class="btn btn-primary d-flex justify-content-center align-items-center" role="button"
@@ -202,12 +205,12 @@
                                     <div class="row">
                                       <div class="col-6">
                                         <button type="button" data-dismiss="modal"
-                                          class="btn btn-secondary ButtonExit-Delete "><i
+                                          class="btn btn-secondary ButtonExit-Delete exit "><i
                                             class="fa fa-times"></i>&nbsp;&nbsp;بیخیال</button>
                                       </div>
                                       <div class="col-6">
                                         <button type="button"
-                                          class="btn btn-primary Buttonyes">بلی&nbsp;&nbsp;<i
+                                          class="btn btn-primary Buttonyes save">بلی&nbsp;&nbsp;<i
                                             class="fas fa-check"></i></button>
                                       </div>
                                     </div>
@@ -278,13 +281,13 @@
                                     <div class="modal-footer d-inline p-0 text-center">
                                       <div class="row">
                                         <div class="col-6">
-                                          <button type="button" class="btn btn-secondary ButtonExit"
+                                          <button type="button" class="btn btn-secondary ButtonExit exit"
                                             onclick="$('#setmention').modal('hide')"><i
                                               class="fa fa-times"></i>&nbsp;&nbsp;&nbsp;&nbsp;بیخیال</button>
                                         </div>
                                         <div class="col-6">
                                           <button type="button"
-                                            class="btn btn-primary Buttonsave">ذخیره&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                            class="btn btn-primary Buttonsave save">ذخیره&nbsp;&nbsp;&nbsp;&nbsp;<i
                                               class="fas fa-user-check"></i></button>
                                         </div>
                                       </div>
@@ -338,13 +341,13 @@
                                     <div class="modal-footer d-inline p-0 text-center">
                                       <div class="row">
                                         <div class="col-6">
-                                          <button type="button" class="btn btn-secondary ButtonExit"
+                                          <button type="button" class="btn btn-secondary ButtonExit exit"
                                             onclick="$('#setmention-meeting').modal('hide')"><i
                                               class="fa fa-times"></i>&nbsp;&nbsp;&nbsp;&nbsp;بیخیال</button>
                                         </div>
                                         <div class="col-6">
                                           <button type="button"
-                                            class="btn btn-primary Buttonsave">ذخیره&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                            class="btn btn-primary Buttonsave save">ذخیره&nbsp;&nbsp;&nbsp;&nbsp;<i
                                               class="fas fa-user-check"></i></button>
                                         </div>
                                       </div>
@@ -379,13 +382,13 @@
                                     <div class="modal-footer d-inline p-0 text-center">
                                       <div class="row">
                                         <div class="col-6">
-                                          <button type="button" class="btn btn-secondary ButtonExit-Delete"
+                                          <button type="button" class="btn btn-secondary ButtonExit-Delete exit"
                                             onclick="$('#delete-link').modal('hide')"><i
                                               class="fa fa-times"></i>&nbsp;&nbsp;&nbsp;&nbsp;بیخیال</button>
                                         </div>
                                         <div class="col-6">
                                           <button type="button"
-                                            class="btn btn-primary Buttonyes">بلی&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                            class="btn btn-primary Buttonyes save">بلی&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
                                               class="fas fa-check"></i></button>
                                         </div>
                                       </div>
@@ -412,8 +415,257 @@
               </div>
           </section>
         </div>
+         <!-- آیتم مریوط به مشتری های قطعی که در این قسمت میتوانند ویژگی هایی را داشته باشند -->
         <div class="tab-pane" role="tabpanel" id="tab-3">
-          <p>Content for tab 3.</p>
+           <section id="posiblecustomers1" style="margin-top: 25px;height: 148px;">
+            <div class="container">
+              <div class="row" id="posiblecustomers-row">
+                <div class="col-4 col-md-3" id="customer-img" style="padding-right: 0px;">
+                  <div class="d-flex justify-content-center align-items-center Set-Image-CustomersPage-Div" id="image-div">
+                    <i class="fa fa-user-secret" id="icononimage"
+                      style="margin-top: -71px;font-size: 30px;margin-left: 14px;"></i><img
+                      class="d-flex rounded-circle" id="img-customers" style="margin-right: -37px;"
+                      src="assets/img/user%20(1).svg"></div>
+                </div>
+                <div class="col" id="customers-processes">
+                  <div class="row">
+                    <div class="col-12" id="deleteandname-col" style="margin-top: 7px;">
+                      <div class="row">
+                        <div class="col" style="margin-top: 8px;">
+                          <p class="text-right" style="font-size: 21px;font-weight: 300;margin-bottom: 6px;">&nbsp;
+                            &nbsp;<i class="fa fa-user" style="color: rgb(36,105,179);"></i> name&nbsp;</p>
+                        </div>
+                        <div class="col-4">
+                          <div>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn Trashbin-Icon "
+                             data-toggle="modal"
+                              data-target="#deletepersonincertain"><i class="fa fa-trash" style="font-size:28px"></i>
+
+                            </button>
+
+                            <!-- Modal -->
+
+                            <div class="modal fade" id="deletepersonincertain" tabindex="-1" role="dialog"
+                              aria-labelledby="deletepersonincertainLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header" style="justify-content: center">
+                                    <h5 class="modal-title" id="deletepersonincertainLabel">آیا برای حذف مطممن هستید؟</h5>
+                                  </div>
+                                  <div class="modal-footer d-inline p-0" style="text-align:center">
+                                    <div class="row">
+                                      <div class="col-6">
+                                        <button type="button" data-dismiss="modal"
+                                          class="btn btn-secondary ButtonExit-Delete exit "><i
+                                            class="fa fa-times"></i>&nbsp;&nbsp;بیخیال</button>
+                                      </div>
+                                      <div class="col-6">
+                                        <button type="button"
+                                          class="btn btn-primary Buttonyes save">بلی&nbsp;&nbsp;<i
+                                            class="fas fa-check"></i></button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn  mt-2 ChooseOperation-InCustomerspanel" data-toggle="modal"
+                        data-target="#chooseoperationincertain"><i class="fa fa-gear" style="font-size:18px"></i>
+                        &nbsp;&nbsp;انتخاب عملیات
+                      </button>
+
+                      <!-- Modal -->
+
+                      <div class="modal fade" id="chooseoperationincertain" tabindex="-1" role="dialog"
+                        aria-labelledby="chooseoperationincertainTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content" style="text-align:right">
+                            <div class="modal-body">
+                              <a href="edit.html" class="tooltip-test " style="text-decoration:none" title="Tooltip"><i
+                                  class="fa fa-edit"></i>&nbsp;&nbsp;تکمیل اطلاعات</a>
+                              <hr>
+                              <a href="#" id="setmentionlink" class="tooltip-test" style="text-decoration:none"
+                                title="Tooltip" data-toggle="modal" data-target="#setmentionincertain"><i
+                                  class="fa fa-phone"></i>&nbsp;&nbsp;ثبت یادآوری تماس</a>
+                              <div class="modal fade" id="setmentionincertain" tabindex="-1" role="dialog"
+                                aria-labelledby="chooseoperationTitle" aria-hidden="true">
+                                <div class="modal-dialog " role="document">
+                                  <div class="modal-content">
+                                    <button class="btn btn-light mt-4  mx-1 ChooseDateAndTime-Collaps " type="button"
+                                      data-toggle="collapse" data-target="#choosedateincertain" aria-expanded="false"
+                                      aria-controls="choosedateincertain">
+                                      انتخاب تاریخ
+
+                                    </button>
+
+                                    <div class="collapse" id="choosedateincertain">
+                                      <div class="card card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes
+                                        anderson cred nesciunt sapiente ea proident.
+                                      </div>
+                                    </div>
+                                    <hr>
+                                    <button class="btn btn-light mb-2 mx-1 ChooseDateAndTime-Collaps" type="button"
+                                      data-toggle="collapse" data-target="#choosetimeincertain" aria-expanded="false"
+                                      aria-controls="choosetimeincertain">
+                                      انتخاب ساعت
+
+                                    </button>
+
+                                    <div class="collapse" id="choosetimeincertain">
+                                      <div class="card card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes
+                                        anderson cred nesciunt sapiente ea proident.
+                                      </div>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="modal-footer d-inline p-0 text-center">
+                                      <div class="row">
+                                        <div class="col-6">
+                                          <button type="button" class="btn btn-secondary ButtonExit exit"
+                                            onclick="$('#setmentionincertain').modal('hide')"><i
+                                              class="fa fa-times"></i>&nbsp;&nbsp;&nbsp;&nbsp;بیخیال</button>
+                                        </div>
+                                        <div class="col-6">
+                                          <button type="button"
+                                            class="btn btn-primary Buttonsave save">ذخیره&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                              class="fas fa-user-check"></i></button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <hr>
+
+                              <a href="#" id="setmentionlink" class="tooltip-test" style="text-decoration:none"
+                                title="Tooltip" data-toggle="modal" data-target="#setmention-meetingincertain"><i
+                                  class="fa fa-users"></i>&nbsp;&nbsp;ثبت یادآوری جلسه</a>
+
+                              <div class="modal fade" id="setmention-meetingincertain" tabindex="-1" role="dialog"
+                                aria-labelledby="chooseoperationTitle" aria-hidden="true">
+                                <div class="modal-dialog " role="document">
+                                  <div class="modal-content">
+
+                                    <button class="btn btn-light mt-4  mx-1 ChooseDateAndTime-Collaps" type="button"
+                                      data-toggle="collapse" data-target="#choosedate-meetingincertain" aria-expanded="false"
+                                      aria-controls="choosedate-meetingincertain">
+                                      انتخاب تاریخ
+
+                                    </button>
+
+                                    <div class="collapse" id="choosedate-meetingincertain">
+                                      <div class="card card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes
+                                        anderson cred nesciunt sapiente ea proident.
+                                      </div>
+                                    </div>
+                                    <hr>
+                                    <button class="btn btn-light mb-2 mx-1 ChooseDateAndTime-Collaps" type="button"
+                                      data-toggle="collapse" data-target="#choosetime-meetingincertain" aria-expanded="false"
+                                      aria-controls="choosetime-meetingincertain">
+                                      انتخاب ساعت
+
+                                    </button>
+
+                                    <div class="collapse" id="choosetime-meetingincertain">
+                                      <div class="card card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes
+                                        anderson cred nesciunt sapiente ea proident.
+                                      </div>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="modal-footer d-inline p-0 text-center">
+                                      <div class="row">
+                                        <div class="col-6">
+                                          <button type="button" class="btn btn-secondary ButtonExit exit"
+                                            onclick="$('#setmention-meetingincertain').modal('hide')"><i
+                                              class="fa fa-times"></i>&nbsp;&nbsp;&nbsp;&nbsp;بیخیال</button>
+                                        </div>
+                                        <div class="col-6">
+                                          <button type="button"
+                                            class="btn btn-primary Buttonsave save">ذخیره&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                              class="fas fa-user-check"></i></button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <hr>
+                              <a href="#" class="tooltip-test" style="text-decoration:none" title="Tooltip"><i
+                                  class="fa fa-check-circle"></i>&nbsp;&nbsp;فروش موفق بود</a>
+                              <hr>
+                              <a href="questionnaire.html" class="tooltip-test" style="text-decoration:none"
+                              title="Tooltip"><i class="fa fa-list-alt"></i>&nbsp;&nbsp;لیست پرسشنامه ها</a>
+                            <hr>
+                            <a href="#" class="tooltip-test" style="text-decoration:none" title="Tooltip"><i
+                                class="fa fa-search"></i>&nbsp;&nbsp;لیست بیمه نامه ها</a>
+                            <hr>
+                           
+                              <a href="#" class="tooltip-test " title="Tooltip" style="color:red;text-decoration:none"
+                                title="Tooltip" data-toggle="modal" data-target="#delete-linkincertain"><i
+                                  class="fa fa-user-times"></i>&nbsp;&nbsp;حذف
+                                کردن از لیست
+                              </a>
+                            
+                              <div class="modal fade" id="delete-linkincertain" tabindex="-1" role="dialog"
+                                aria-labelledby="chooseoperationTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered " role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header" style="justify-content: center">
+                                      <h5 class="modal-title" id="deletepersonLabel">آیا برای حذف مطممن هستید؟</h5>
+                                    </div>
+                                    <div class="modal-footer d-inline p-0 text-center">
+                                      <div class="row">
+                                        <div class="col-6">
+                                          <button type="button" class="btn btn-secondary ButtonExit-Delete exit"
+                                            onclick="$('#delete-linkincertain').modal('hide')"><i
+                                              class="fa fa-times"></i>&nbsp;&nbsp;&nbsp;&nbsp;بیخیال</button>
+                                        </div>
+                                        <div class="col-6">
+                                          <button type="button"
+                                            class="btn btn-primary Buttonyes save">بلی&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                              class="fas fa-check"></i></button>
+                                        </div>
+                                      </div>
+                                    </div>
+
+
+                                   
+                                  </div>
+                                </div>
+                              </div>
+                              <hr>
+
+                            </div>
+                         
+                            <a class="modal-footer button p-3 d-flex justify-content-center Bikhial-Link" data-dismiss="modal">
+                            بیخیال
+                          </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </section>
         </div>
       </div>
     </div>
