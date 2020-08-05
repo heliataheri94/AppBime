@@ -431,7 +431,7 @@ body {
 
 .InputGroup-AddQustionnair {
   border-radius: 0 0 0 0;
-  background-color: rgb(15,71,128);
+  background-color: #2469b3;;
 }
 
 .Save-Questionnaire{
@@ -450,13 +450,15 @@ body {
 
 #saveandexit {
   text-align: center;
+  margin-top: 31px;
+  margin-bottom: 65px;
 }
 
-#save {
+.save {
   border-radius: 50px 0 0 50px;
 }
 
-#exit {
+.exit {
   border-radius: 0 50px 50px 0;
   color: white;
 }
@@ -713,4 +715,7 @@ body {
   width: 60%;
   height: 51px;
   background-color: rgb(15,71,128);
+}
+#sapn-edit{
+  background-color: #2469b3;
 }
